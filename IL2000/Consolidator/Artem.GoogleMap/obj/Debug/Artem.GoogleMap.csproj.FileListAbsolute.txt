@@ -1,0 +1,15 @@
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\bin\Debug\Artem.GoogleMap.dll
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\bin\Debug\Artem.GoogleMap.pdb
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\obj\Debug\Artem.GoogleMap.dll
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\obj\Debug\Artem.GoogleMap.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\Artem.GoogleMap\bin\Debug\Artem.GoogleMap.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\Artem.GoogleMap\bin\Debug\Artem.GoogleMap.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\Artem.GoogleMap\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\Artem.GoogleMap\obj\Debug\Artem.GoogleMap.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\Artem.GoogleMap\obj\Debug\Artem.GoogleMap.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\Artem.GoogleMap\bin\Debug\Artem.GoogleMap.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\Artem.GoogleMap\bin\Debug\Artem.GoogleMap.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\Artem.GoogleMap\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\Artem.GoogleMap\obj\Debug\Artem.GoogleMap.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\Artem.GoogleMap\obj\Debug\Artem.GoogleMap.pdb

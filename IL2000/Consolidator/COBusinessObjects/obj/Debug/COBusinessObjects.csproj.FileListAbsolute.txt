@@ -1,0 +1,10 @@
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\COBusinessObjects\bin\Debug\COBusinessObjects.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\COBusinessObjects\bin\Debug\COBusinessObjects.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\COBusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\COBusinessObjects\obj\Debug\COBusinessObjects.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Artemis\Consolidator\COBusinessObjects\obj\Debug\COBusinessObjects.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\COBusinessObjects\bin\Debug\COBusinessObjects.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\COBusinessObjects\bin\Debug\COBusinessObjects.pdb
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\COBusinessObjects\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\COBusinessObjects\obj\Debug\COBusinessObjects.dll
+C:\Documents and Settings\fsalas\Desktop\IL2000\Consolidator\COBusinessObjects\obj\Debug\COBusinessObjects.pdb

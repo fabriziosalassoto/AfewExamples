@@ -1,0 +1,5 @@
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\bin\Release\Artem.GoogleMap.dll
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\bin\Release\Artem.GoogleMap.pdb
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\obj\Release\ResolveAssemblyReference.cache
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\obj\Release\Artem.GoogleMap.dll
+D:\Projects\Codeplex\GoogleMap\Work\Velio\Artem.GoogleMap\obj\Release\Artem.GoogleMap.pdb
