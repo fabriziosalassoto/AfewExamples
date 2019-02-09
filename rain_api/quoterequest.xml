@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quoteRequest>
+	<documentVersion>1.1</documentVersion>
+	<quoteRequestDetails>
+		<advertiserAssignedId>1931</advertiserAssignedId>
+		<listingExternalId>10341</listingExternalId>
+		<unitExternalId>10341</unitExternalId>
+		<propertyUrl>stage.homeaway.com/vacation-rental/p3173184</propertyUrl>
+		<listingChannel>HOMEAWAY_US</listingChannel>
+ 		<masterListingChannel>HOMEAWAY_US</masterListingChannel>
+		<reservation>
+			<numberOfAdults>1</numberOfAdults>
+			<numberOfChildren>0</numberOfChildren>
+			<numberOfPets>0</numberOfPets>
+			<reservationDates>
+				<beginDate>2015-12-23</beginDate>
+				<endDate>2015-12-30</endDate>				
+			</reservationDates>
+		</reservation>
+ 		<trackingUuid>1f921919-716f-4f17-8a96-87649cabdc37</trackingUuid>
+	</quoteRequestDetails>
+</quoteRequest>

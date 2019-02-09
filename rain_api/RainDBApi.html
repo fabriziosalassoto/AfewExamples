@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
+<html>
+	<head>
+		<title>Insert title here</title>
+		<meta charset="ISO-8859-1"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="RainDBApi.js"></script>
+	</head>
+	<body>
+		<p>Select Query:
+		<select id="slc_operation">
+			<option value="GetVillaInformation" selected="selected">GetVilla</option>
+            <option value="GetAvailabilityCalendar">Get Availability Calendar</option>
+			<option value="GetAvailabilityInformation">Get Availability</option>
+            <option value="GetBookingInformation">Get Booking</option>
+            <option value="GetBookingBillingInformation">Get Booking Billing Information</option>
+            <option value="GetBookingClientInformation">Get Booking Client Information</option>
+            <option value="GetBookingExpenseInformation">Get Booking Expense Information</option>
+            <option value="GetBookingFeeInformation">Get Booking Fee Information</option>   
+            <option value="GetBookingItemsInformation">Get Booking Items Information</option>   
+			<option value="GetClientInformation">Get Client Information</option>               
+			<option value="GetClientNotesInformation">Get Client Notes Information</option>                           
+            <option value="GetCurrencyInformation">Get Currency Information</option>                           
+            <option value="GetExchangeRatesInformation">Get Exchange Rates Information</option>                           
+			<option value="GetLeadInformation">Get Lead Information</option>                           
+			<option value="GetPartnerAgentInformation">Get Partner Agent Information</option>                           
+			<option value="GetPartnerCompanyInformation">Get Partner Company Information</option>                           
+			<option value="GetRainAPIInformation">Get Rain API Information</option>                           
+			<option value="GetRainAPITransactionInformation">Get Rain API Transaction Information</option>                           
+			<option value="GetRainVillaInformation">Get Rain Villa Information</option>                           
+			<option value="GetRateInformation">Get Rate Information</option>                           
+			<option value="GetRequestInformation">Get Request Information</option>                           
+			<option value="GetVendorInformation">Get Vendor Information</option>                           
+			<option value="GetVillaFeeInformation">Get Villa Fee Information</option>                           
+			<option value="GetVillaRateInformation">Get Villa Rate Information</option>                           
+		</select>
+		</p>
+		<p>Select Filter Criteria:
+		<select id="slc_filter">
+			<option selected="selected" value="All">All</option>
+			<option value="id">By ID</option>
+			<option value="displayid">By DisplayID</option>
+			<option value="vendorid">By VendorID</option>
+			<option value="apicode">By Apicode</option>
+			<option value="currency">By Currency</option>
+			<option value="name">By Name</option>
+			<option value="status">By Status</option>
+		</select>
+		</p>
+		<p>1st. Parameter: <input id="txtparameter1" /> </p>
+   		<p>2nd. Parameter: <input id="txtparameter2" /> </p>
+        <p>3nd. Parameter: <input id="txtparameter3" /> </p>
+		<p><input type="button" id="btnQuery" value="Query"/> </p>      
+		<textarea id ="text" rows="200" cols="120" id="txtresults"></textarea>
+  
+	</body>
+</html>

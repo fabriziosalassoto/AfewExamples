@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--<!DOCTYPE html>-->
+<html>
+	<head>
+		<title>LacureBookingAPI</title>
+		<meta charset="ISO-8859-1"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="LacureBookingAPI.js"></script>
+	</head>
+	<body>
+		<input type="hidden" id="hdnRequestType">
+    	<h1>Quote, Booking and Booking Index Requests</h1>
+		<p>Select Method:
+		<select id="slc_method">
+	        <option value="blank" selected>[Choose one option])</option>
+			<option value="SendQuoteRequestWithExample">Send Quote Request (with example)</option>
+			<option value="SendBookingRequestWithExample">Send Booking Request (with example)</option>
+            <option value="SendBookingIndexRequestWithExample">Send Booking Index Request (with example)</option>
+            <option value="SendQuoteRequestOwn">Send Quote Request (Own Request)</option>
+            <option value="SendBookingRequestOwn">Send Booking Request (Own Request)</option>
+            <option value="SendBookingIndexRequestOwn">Send Booking Index Request (Own Request)</option>
+		</select>
+		</p>
+		<p><input type="button" id="btnQuery" value="Query"/> </p>
+        <table> 
+        	<tr>
+            	<td>XML Request:</td>
+                <td>XML Response:</td>
+            </tr>
+            <tr> 
+            	<td>    
+					<textarea rows="50" cols="90" id="txtrequest"></textarea>				
+				</td>
+                <td>
+                	<textarea rows="50" cols="90" id="txtresponse"></textarea>  
+                </td>
+        	</tr>
+        </table>
+	</body>
+</html>

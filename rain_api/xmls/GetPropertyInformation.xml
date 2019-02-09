@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<properties>
+    <property>
+        <AdvertiserID>1931</AdvertiserID>
+        <propertyURL>stage.homeaway.com/vacation-rental/p3173184</propertyURL>
+        <locale>en_US</locale>
+        <currency>USD</currency>  
+        <restrictions>
+            <MinimumLengthOfStay>3</MinimumLengthOfStay>
+            <MaxOccupancy>2</MaxOccupancy>
+        </restrictions>
+        <availabilities>  
+	        <availability>
+                <dateFrom>2015-11-17</dateFrom>
+                <dateTo>2015-11-25</dateTo>
+            </availability>
+            <availability>
+                <dateFrom>2015-12-20</dateFrom>
+                <dateTo>2015-12-26</dateTo>
+            </availability>
+            <availability>
+                <dateFrom>2015-12-27</dateFrom>
+                <dateTo>2015-12-31</dateTo>
+            </availability>
+        </availabilities>
+        <rates>
+            <seasons>
+                <season>
+                    <dateFrom>2015-03-01</dateFrom>
+                    <dateTo>2015-12-30</dateTo>
+                    <checkinoutInfo>
+                        <checkin>12:00:00 PM</checkin>
+                        <checkout>03:00:00 PM</checkout>
+                    </checkinoutInfo>
+                    <rate>
+                        <bedrooms>6</bedrooms>
+                        <rateDesc>Rent</rateDesc>
+                		<rateType>RENTAL</rateType>
+                		<rateName>Rent</rateName>
+                        <preTaxAmount currency="USD">2800</preTaxAmount>                                                         
+                        <totalAmount currency="USD">3106.60</totalAmount>
+                        <deadlineInDays>20</deadlineInDays>
+                    </rate>
+                </season>
+            </seasons>
+        </rates>
+        <fees>            	        
+            <fee>
+                <feeDesc>Resort Fee</feeDesc>
+                <feeType>RENTAL</feeType>
+                <feeName>Resort Fee</feeName>
+                <preTaxAmount currency="USD">84</preTaxAmount>
+                <totalAmount currency="USD">93.20</totalAmount>
+          	</fee>          	
+        </fees>
+        <paymentpolicy>Cancellation Policy Text Goes Here</paymentpolicy>
+        <stayfees>
+            <stayfee>
+                <note>example</note>
+            </stayfee>
+        </stayfees>
+        <cancellationpolicy>
+            <amount currency="USD">500.0</amount>
+            <deadlineInDays>5</deadlineInDays>
+            <penaltyType>CHARGE</penaltyType>
+            <notes>cancellation policy goes here</notes>
+        </cancellationpolicy>
+        <notes>Information Goes Here</notes>
+        <rentalagreement>Rental Agreement Text Goes Here</rentalagreement>
+    </property>
+</properties>
