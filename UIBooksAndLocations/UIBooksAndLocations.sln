@@ -1,0 +1,77 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "UIBooksAndLocations", "http://localhost:4735", "{13A5B546-19C8-422C-BB53-2A059A66C515}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{9648b108-9599-4779-bc53-2ce4d7f50ae9}|BRBusinessObjects.dll;{3B604933-F6AA-4118-AA86-75EE8DC4EB72}|BRLibrary.dll;{49660187-EF5F-4F64-BF08-EAC591B31D96}|DBControllers.dll;{2BE40400-8BA5-4D7E-B070-DAE740EC7CBF}|DBBroker.dll;{11afb5c5-af5f-4866-a504-c4b1e54d9fc5}|DFDataFlowControllers.dll;{6255fc7a-cfae-48f6-ba7d-be54f6357c89}|DFWebHandlers.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_4735"
+		Debug.AspNetCompiler.PhysicalPath = "..\UIBooksAndLocations\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4735\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_4735"
+		Release.AspNetCompiler.PhysicalPath = "..\UIBooksAndLocations\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_4735\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\UIBooksAndLocations\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRLibrary", "BRLibrary\BRLibrary.csproj", "{3B604933-F6AA-4118-AA86-75EE8DC4EB72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BRBusinessObjects", "BusinessObjects\BRBusinessObjects.csproj", "{9648B108-9599-4779-BC53-2CE4D7F50AE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBBroker", "DBBroker\DBBroker.csproj", "{2BE40400-8BA5-4D7E-B070-DAE740EC7CBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBControllers", "DBObjects\DBControllers.csproj", "{49660187-EF5F-4F64-BF08-EAC591B31D96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFDataFlowControllers", "UIDataFlow\DFDataFlowControllers.csproj", "{11AFB5C5-AF5F-4866-A504-C4B1E54D9FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DFWebHandlers", "DFWebHandlers\DFWebHandlers.csproj", "{6255FC7A-CFAE-48F6-BA7D-BE54F6357C89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13A5B546-19C8-422C-BB53-2A059A66C515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A5B546-19C8-422C-BB53-2A059A66C515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A5B546-19C8-422C-BB53-2A059A66C515}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A5B546-19C8-422C-BB53-2A059A66C515}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3B604933-F6AA-4118-AA86-75EE8DC4EB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B604933-F6AA-4118-AA86-75EE8DC4EB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B604933-F6AA-4118-AA86-75EE8DC4EB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B604933-F6AA-4118-AA86-75EE8DC4EB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9648B108-9599-4779-BC53-2CE4D7F50AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9648B108-9599-4779-BC53-2CE4D7F50AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9648B108-9599-4779-BC53-2CE4D7F50AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9648B108-9599-4779-BC53-2CE4D7F50AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE40400-8BA5-4D7E-B070-DAE740EC7CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE40400-8BA5-4D7E-B070-DAE740EC7CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE40400-8BA5-4D7E-B070-DAE740EC7CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE40400-8BA5-4D7E-B070-DAE740EC7CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49660187-EF5F-4F64-BF08-EAC591B31D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49660187-EF5F-4F64-BF08-EAC591B31D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49660187-EF5F-4F64-BF08-EAC591B31D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49660187-EF5F-4F64-BF08-EAC591B31D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11AFB5C5-AF5F-4866-A504-C4B1E54D9FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11AFB5C5-AF5F-4866-A504-C4B1E54D9FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11AFB5C5-AF5F-4866-A504-C4B1E54D9FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11AFB5C5-AF5F-4866-A504-C4B1E54D9FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6255FC7A-CFAE-48F6-BA7D-BE54F6357C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6255FC7A-CFAE-48F6-BA7D-BE54F6357C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6255FC7A-CFAE-48F6-BA7D-BE54F6357C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6255FC7A-CFAE-48F6-BA7D-BE54F6357C89}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

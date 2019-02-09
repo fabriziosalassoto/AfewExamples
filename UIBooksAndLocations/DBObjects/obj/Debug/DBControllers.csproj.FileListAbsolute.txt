@@ -1,0 +1,16 @@
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\bin\Debug\DBControllers.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\bin\Debug\DBControllers.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\bin\Debug\DBBroker.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\bin\Debug\System.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\bin\Debug\DBBroker.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\obj\Debug\DBControllers.csprojResolveAssemblyReference.cache
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\obj\Debug\DBControllers.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\DBObjects\obj\Debug\DBControllers.pdb
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\obj\Debug\DBControllers.csprojResolveAssemblyReference.cache
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\obj\Debug\DBControllers.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\obj\Debug\DBControllers.pdb
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\bin\Debug\DBControllers.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\bin\Debug\DBControllers.pdb
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\bin\Debug\DBBroker.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\bin\Debug\System.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\DBObjects\bin\Debug\DBBroker.pdb

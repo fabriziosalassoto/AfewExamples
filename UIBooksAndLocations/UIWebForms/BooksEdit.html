@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Books Edition</title>
+    <link type="text/css" rel="stylesheet" href="css/BooksEdit.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+    <script src="js/BooksEdit.js"></script>
+</head>
+<body>
+    <div id="bodybooksdetail">        
+        <div class="widget_heading">
+            <h2>Enter new book data</h2>
+        </div>
+        <div class="widget_labels">
+            <h2>Name: </h2>
+            <h2>Author: </h2>
+            <h2>ISBN: </h2>
+            <h2>Description: </h2>
+        </div>
+        <div class="widget_inputs">
+            <br />
+            <input type="hidden" value="" id="hdnMyBookID"/>
+            <input type="text" value="" id="txtBookName" class="booksinputs" size="55"/><br /><br />
+            <input type="text" value="" id="txtBookAuthor" class="booksinputs" size="55" /><br /><br />
+            <input type="text" value="" id="txtBookISBN" class="booksinputs" size="45"/><br /><br />    
+            <textarea rows="4" cols="37" id="txtBookDescription"></textarea>
+        </div>
+        <div class="widget_controller">
+            <input type="button" value="Save" id="cmdSave" class="SaveAndCancel"/>
+            <input type="button" value="Cancel" id="cmdCancel" class="SaveAndCancel"/>
+        </div>
+    </div>
+</body>
+</html>

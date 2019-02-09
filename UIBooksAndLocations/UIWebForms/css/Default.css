@@ -1,0 +1,75 @@
+﻿body {
+}
+
+#bodydefaultdetail {
+    top:20px;
+    left:20px;
+    right:20px;
+    position:absolute;
+}
+
+table {
+    background-color: #aaa;        
+    border:1px dotted black;               
+    border-spacing:0;          
+    white-space: normal; 
+}
+
+thead {
+    /*background: linear-gradient(black,darkblue);*/
+/*    background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkblue));  */
+    background: -webkit-linear-gradient(top, black, darkblue);
+    background:    -moz-linear-gradient(top, black, darkblue);
+    background:      -o-linear-gradient(top, black, darkblue);
+    background:         linear-gradient(to bottom, black, darkblue);
+    color:white;
+    text-align:center;
+}
+
+tbody {
+  /*  background: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(white));    */
+    background: -webkit-linear-gradient(top, lightgray, white);
+    background:    -moz-linear-gradient(top, lightgray, white);
+    background:      -o-linear-gradient(top, lightgray, white);
+    background:         linear-gradient(to bottom, lightgray, white);
+    color:black;
+    height: 170px;
+    overflow: auto;            
+}
+td {
+    padding: 3px 10px;     
+}
+
+thead > tr, tbody{
+    display:block;
+}
+
+.cell_properties {
+    border:1px dotted black;       
+    border-spacing:0;
+}
+
+.edition_button {
+/*  background:linear-gradient(black,darkblue);*/
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkblue));
+    background: -webkit-linear-gradient(top, black, darkblue);
+    background:    -moz-linear-gradient(top, black, darkblue);
+    background:      -o-linear-gradient(top, black, darkblue);
+    background:         linear-gradient(to bottom, black, darkblue);
+    height:40px;
+    width:40px;
+    color:white;
+    border:2px solid white;
+}
+
+.edition_button:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(yellow));
+    background: -webkit-linear-gradient(top, black, yellow);
+    background:    -moz-linear-gradient(top, black, yellow);
+    background:      -o-linear-gradient(top, black, yellow);
+    background:         linear-gradient(to bottom, black, yellow);
+    font-weight:300;
+    color:red;
+    text-shadow: lightgray -2px 2px 3px;        
+    cursor:pointer;   
+}

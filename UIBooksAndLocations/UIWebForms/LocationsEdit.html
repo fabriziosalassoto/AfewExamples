@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Locations Edition</title>
+    <link type="text/css" rel="stylesheet" href="css/LocationsEdit.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    <script src="js/LocationsEdit.js"></script>
+</head>
+<body>
+    <div id="bodylocationsdetail">        
+        <div class="widget_heading">
+            <h2>Enter new location data</h2>
+        </div>
+        <div class="widget_labels">
+            <h3>Name: </h3>
+            <h3>Description: </h3><br>
+            <h3>Address: </h3>
+            <h3 class="lat">Latitude: </h3>
+            <h3 class="long">Logitude: </h3>
+
+        </div>
+        <div class="widget_inputs">
+            <br />            
+            <input type="hidden" value="" id="hdnMyLocationID"/>
+            <input type="text" value="" id="txtLocationName" class="inputs"/><br />
+            <textarea rows="4" cols="37" id="txtLocationDescription" class="bigtextarea"></textarea><br />
+            <input type="text" value="" id="txtLocationAddress" class="inputs" size="55" /><br /><br/>
+            <input type="text" value="" id="txtLocationLatitude" class="latlong" size="30"/><br /><br/>
+            <input type="text" value="" id="txtLocationLongitude" class="latlong" size="30"/><br />
+            <input type="button" value="View GEO Location" id="cmdMap" class="ButtonViewMap" onclick="ViewMap()"/>
+        </div>
+        <div class="widget_controller">
+            <input type="button" value="Save" id="cmdSave" class="SaveAndCancel"/>
+            <input type="button" value="Cancel" id="cmdCancel" class="SaveAndCancel"/>
+        </div>  
+    </div>
+</body>
+</html>

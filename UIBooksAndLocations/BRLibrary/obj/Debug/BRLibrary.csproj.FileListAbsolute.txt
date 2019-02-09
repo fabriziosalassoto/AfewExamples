@@ -1,0 +1,16 @@
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\bin\Debug\BRLibrary.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\bin\Debug\BRLibrary.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\bin\Debug\System.Configuration.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\bin\Debug\System.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\bin\Debug\System.Xml.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\obj\Debug\BRLibrary.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\BRLibrary\obj\Debug\BRLibrary.pdb
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\obj\Debug\BRLibrary.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\obj\Debug\BRLibrary.pdb
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\BRLibrary.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\BRLibrary.pdb
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\System.Configuration.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\System.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\System.Xml.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\fsalas\Desktop\Proyectos\UIBooksAndLocations\BRLibrary\bin\Debug\Newtonsoft.Json.xml

@@ -1,0 +1,5 @@
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\UIDataFlow.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\UIDataFlow.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\obj\Debug\UIDataFlow.csprojResolveAssemblyReference.cache
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\obj\Debug\UIDataFlow.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\obj\Debug\UIDataFlow.pdb

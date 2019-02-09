@@ -1,0 +1,141 @@
+﻿body {
+}
+
+#bodylocationsdetail {
+    top:20px;
+    left:10px;
+    right:20px;
+    position:absolute;
+}
+
+.widget_labels {
+    border: 3px groove white;
+    border-radius: 15px;
+    background-color: #201f71;
+    width:160px;
+    height:300px;
+    top:85px;
+    left:10px;    
+    color:white;
+    padding-left:10px;
+    font-family:Tahoma;
+    position: absolute;
+}
+
+.widget_inputs {
+    border: 3px groove black;
+    border-radius: 15px;
+    background-color: white;
+    padding-left:20px;
+    width:460px;
+    height:300px;
+    top:85px;
+    left:200px;
+    font-family:Tahoma;
+    font-size:larger;
+    position: absolute;
+}
+
+.widget_heading {
+    border: 3px groove white;
+    border-radius: 15px;
+    background-color: #201f71;
+    width:670px;
+    height:60px;
+    top:5px;
+    left:10px;    
+    color:white;
+    padding-left:0px;
+    font-family:Tahoma;    
+    position:absolute;
+    text-align:center;
+}
+
+.widget_controller {
+    border: 3px groove black;
+    border-radius: 15px;
+    background-color: white;
+    width:670px;
+    height:60px;
+    top:405px;
+    left:10px;    
+    color:white;
+    padding-left:0px;
+    padding-top:15px;
+    font-family:Tahoma;    
+    position:absolute;
+    text-align:center;
+}
+
+input[type='text']{
+    font-weight:400;
+    font-size:medium;    
+}
+
+.inputs {
+    width: 420px;
+}
+
+.bigtextarea {
+   width:430px;
+   height:70px;
+}
+
+textarea {
+    font-size: 120%; 
+}
+
+input[type='text']:focus,
+textarea:focus {
+    background-color:#fdff39;
+}
+    
+.SaveAndCancel {
+    background-color:#201f71;
+    border:2px solid red;    
+    font-size:x-large;
+    height:40px;
+    width:150px;
+    color:white;
+    border:2px solid white;
+}
+
+.SaveAndCancel:hover {
+    background-color:yellow;
+    border:2px solid black;
+    font-weight:300;
+    color:black;
+    text-shadow: lightgray -2px 2px 3px;        
+    cursor:pointer;   
+}
+
+.lat { margin-top: 27px; }
+
+.long { margin-top: 33px; }
+
+.latlong {    
+    width: 250px;
+}
+
+.ButtonViewMap {
+    background-color:#201f71;
+    word-wrap:break-word;
+    border:2px solid red;    
+    font-size:x-large;
+    height:87px;
+    top:180px;
+    left:290px;    
+    width:140px;
+    color:white;
+    border:2px solid white;
+    position:absolute;
+}
+
+.ButtonViewMap:hover {
+    background-color:yellow;
+    border:2px solid black;
+    font-weight:300;
+    color:black;
+    text-shadow: lightgray -2px 2px 3px;        
+    cursor:pointer;   
+}

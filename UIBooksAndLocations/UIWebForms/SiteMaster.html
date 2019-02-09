@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Books & Locations</title>
+    <link type="text/css" rel="stylesheet" href="css/SiteMaster.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+    <script src="js/SiteMaster.js"></script>
+</head>
+<body>
+    <div class="header">
+        <nav class="top_navigation">
+            <li onclick="DisplayWidget(this)">Home</li>        
+            <li onclick="DisplayWidget(this)">Books</li>        
+            <li onclick="DisplayWidget(this)">Locations</li>                    
+        </nav>
+
+    </div>
+    <div class="body">
+        <div class="BooksAndLocationsWidget" id="widgetDefault" onclick="FocusMe(this)">
+            <p class="Widget-header">Books & Locations' list</p>
+            <div class="BodyBooksAndLocationsWidget" id="bodywidgetDefault"></div>
+            <p class="Widget-bottom" onclick="closewidget(this)">CLOSE [X]</p>
+        </div>
+        <div class="BooksAndLocationsWidget" id="widgetBooksEdit" onclick="FocusMe(this)">
+            <p class="Widget-header">Books - CRUD</p>
+            <input type="hidden" id="hdnBookID" value="-1" />
+            <div class="BodyBooksAndLocationsWidget" id="bodywidgetBooksEdit"></div>                        
+            <p class="Widget-bottom" onclick="closewidget(this)">CLOSE [X]</p>
+        </div>
+        <div class="BooksAndLocationsWidget" id="widgetLocationsEdit" onclick="FocusMe(this)">
+            <p class="Widget-header">Location - CRUD</p>                    
+            <input type="hidden" id="hdnLocationID" value="-1" />    
+            <div class="BodyBooksAndLocationsWidget"  id="bodywidgetLocationsEdit"></div>            
+            <p class="Widget-bottom" onclick="closewidget(this)">CLOSE [X]</p>
+        </div>
+        <div class="MapWidget" id="widgetMap" onclick="FocusMe(this)">
+            <p class="Widget-header">Location - GEO Position</p>                                
+            <div class="BodyMapWidget"  id="bodywidgetMap"></div>            
+            <p class="Widget-bottom" onclick="closewidget(this)">CLOSE [X]</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p id="credits">Fabrizio Salas, E-mail: <a href="mailto:fsalas@racsa.co.cr" id="credits2">fsalas@racsa.co.cr</a></p>
+        <input type="hidden" id="MyZindex" value="1"/>
+    </div>
+</body>
+</html>

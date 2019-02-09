@@ -1,0 +1,13 @@
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\obj\Debug\DFDataFlow.csprojResolveAssemblyReference.cache
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\DFDataFlow.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\DFDataFlow.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\BRBusinessObjects.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\DBControllers.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\BRLibrary.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\DBBroker.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\BRBusinessObjects.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\DBControllers.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\BRLibrary.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\bin\Debug\DBBroker.pdb
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\obj\Debug\DFDataFlow.dll
+C:\Users\fsalas\Desktop\UIBooksAndLocations\UIDataFlow\obj\Debug\DFDataFlow.pdb

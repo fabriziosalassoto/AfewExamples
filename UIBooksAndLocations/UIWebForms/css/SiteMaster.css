@@ -1,0 +1,172 @@
+﻿body {
+}
+
+
+.top_navigation {    
+    list-style-type:none;        
+    padding-left:20px;
+    position:relative;
+    top:10px;
+}
+
+.top_navigation li {           
+    float:left;
+    color: white;
+    font-family:Tahoma;
+    font-size:x-large;
+    padding-right:20px;    
+    padding-left:20px;    
+    cursor:pointer;
+    
+}
+
+.top_navigation li:hover {
+    color:red;
+    text-shadow: lightgray -2px 2px 3px;
+    font-weight:600;
+}  
+
+.header, 
+.footer {
+/*  background: linear-gradient(black, darkblue);  */
+    background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkblue));
+    background: -webkit-linear-gradient(top, black, darkblue);
+    background:    -moz-linear-gradient(top, black, darkblue);
+    background:      -o-linear-gradient(top, black, darkblue);
+    background:         linear-gradient(to bottom, black, darkblue);
+    left:0px;
+    width:1436px;
+    height:50px;
+    position:absolute;       
+    border: 2px solid black;
+}
+
+.header {
+    top:0px;
+    	-webkit-box-shadow: 0 20px 6px -6px darkgray;
+	   -moz-box-shadow: 0 20px 6px -6px darkgray;
+	        box-shadow: 0 20px 6px -6px darkgray;
+}
+
+.BooksAndLocationsWidget {
+    border:2px solid;            
+    border-bottom-color: #606060;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:#484848;
+    border-radius:15px;
+    top:100px;
+    left:300px;
+    width:800px;
+    height:600px;
+    background: black;    
+    -webkit-box-shadow: 0 15px 12px 12px darkgray;
+	   -moz-box-shadow: 0 15px 12px -6px darkgray;
+	        box-shadow: 0 15px 12px 12px darkgray;
+    position:absolute;
+}
+
+.BodyBooksAndLocationsWidget {
+    border:2px ridge white;        
+    border-radius:15px;
+    white-space:nowrap;
+    padding:0px;
+    top:40px;
+    left:40px;
+    width:720px;
+    height:520px;
+    background: -webkit-gradient(linear, left top, left bottom, from(darkgray), to(white));
+    background: -webkit-linear-gradient(top, darkgray, white);
+    background:    -moz-linear-gradient(top, darkgray, white);
+    background:      -o-linear-gradient(top, darkgray, white);
+    background:         linear-gradient(to bottom, darkgray, white);
+    position:absolute;
+}
+
+.Widget-header {
+    color:white;
+    padding-left:20px;
+    padding-top:0px;
+}
+
+.Widget-bottom {
+    color:white;
+    right:20px;
+    top:0px;    
+    padding-bottom:0px;
+    position:absolute;
+    cursor:pointer;
+}
+
+.Widget-bottom:hover {
+    color:yellow;
+    text-shadow: lightgray -2px 2px 3px;        
+    cursor:pointer;
+}
+
+.MapWidget {
+    border:2px solid;            
+    border-bottom-color: #606060;
+    border-top-color:white;
+    border-left-color:white;
+    border-right-color:#484848;
+    border-radius:15px;
+    top:200px;
+    left:400px;
+    width:600px;
+    height:400px;
+    background: black;    
+    -webkit-box-shadow: 0 15px 12px 12px darkgray;
+	   -moz-box-shadow: 0 15px 12px -6px darkgray;
+	        box-shadow: 0 15px 12px 12px darkgray;
+    position:absolute;
+}
+
+.BodyMapWidget {
+    border:2px ridge white;        
+    border-radius:15px;
+    padding:0px;
+    top:40px;
+    left:40px;
+    width:520px;
+    height:320px;
+    background: -webkit-gradient(linear, left top, left bottom, from(darkgray), to(white));
+    background: -webkit-linear-gradient(top, darkgray, white);
+    background:    -moz-linear-gradient(top, darkgray, white);
+    background:      -o-linear-gradient(top, darkgray, white);
+    background:         linear-gradient(to bottom, darkgray, white);
+    position:absolute;
+}
+
+
+.footer {
+    top:785px;
+}
+
+#credits {
+    float: right;
+    color: white;
+    padding-right:20px;
+}
+
+#credits2 {
+    color:lightblue;
+}
+
+#credits2:hover {
+    color:yellow;
+}
+
+#widgetDefault,
+#widgetBooksEdit,
+#widgetLocationsEdit,
+#widgetMap {
+    display:none;    
+}
+
+#widgetDefault:focus,
+#widgetBooksEdit:focus,
+#widgetLocationsEdit:focus, 
+#widgetMap:focus {
+    z-index:auto;
+}

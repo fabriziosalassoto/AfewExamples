@@ -1,0 +1,66 @@
+﻿body {
+}
+
+#mapdetail {    
+    left:11px;
+    top:11px;        
+    width:495px;
+    height:295px;    
+    background:white; 
+    display: block;   
+    position:absolute;
+}
+
+#mapdetailover {
+    border: 2px solid black;     
+    left:10px;
+    top:10px;        
+    width:495px;
+    height:295px;    
+    background:white transparent;    
+    position:absolute;
+    display: block;
+    z-index:3;
+}
+
+#mapmessage {    
+    left:60px;
+    top:0px;        
+    width:395px;
+    height:30px;    
+    background:black transparent;    
+    color:red;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    position:absolute;
+    text-align:center;
+    z-index:3;
+    display:none;
+}
+
+#mapnotfound {    
+    left:90px;
+    top:115px;        
+    width:324px;
+    height:75px;    
+    background:black;    
+    color:white;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    position:absolute;
+    text-align:center;
+    z-index:3;
+    display:none;
+}
+
+#mapimage {
+    background-image: url("../images/markericon.png");
+    background-repeat:no-repeat;
+    background-size:32px 32px;    
+    display:none;
+    width:32px;
+    height:32px;
+    left:231px;
+    top:131px;
+    position:absolute;
+}
