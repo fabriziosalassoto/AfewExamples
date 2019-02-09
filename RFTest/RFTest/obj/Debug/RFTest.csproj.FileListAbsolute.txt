@@ -1,0 +1,8 @@
+C:\Users\fsalas\Desktop\Test Rule Financial\RFTest\RFTest\bin\Debug\RFTest.exe.config
+C:\Users\fsalas\Desktop\Test Rule Financial\RFTest\RFTest\bin\Debug\RFTest.exe
+C:\Users\fsalas\Desktop\Test Rule Financial\RFTest\RFTest\bin\Debug\RFTest.pdb
+C:\Users\fsalas\Desktop\Test Rule Financial\RFTest\RFTest\obj\Debug\RFTest.exe
+C:\Users\fsalas\Desktop\Test Rule Financial\RFTest\RFTest\obj\Debug\RFTest.pdb
+C:\Users\fsalas\Desktop\Proyectos\Test Rule Financial\RFTest\RFTest\bin\Debug\RFTest.exe.config
+C:\Users\fsalas\Desktop\Proyectos\Test Rule Financial\RFTest\RFTest\obj\Debug\RFTest.exe
+C:\Users\fsalas\Desktop\Proyectos\Test Rule Financial\RFTest\RFTest\obj\Debug\RFTest.pdb
