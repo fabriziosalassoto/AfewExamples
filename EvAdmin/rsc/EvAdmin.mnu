@@ -1,0 +1,28 @@
+9 EvaAdmin window menubar
+
+1,-1,1,Main...,main,
+1,-2,0,File...,file.ico,
+1,-3,0,Task...,task.ico,
+1,-9,0,Help...,help.ico,
+
+2,-1,1,Main...,main,
+2,0,0,Exit,EXIT.ico,EXIT;
+
+3,-1,1,Main...,main,
+3,0,0,Products,PRODUCTS.ico,PRODUCTS;
+3,0,0,Contacts,CONTACTS.ico,CONTACTS;
+3,0,0,Orders,ORDERS.ico,ORDERS;
+3,0,0,AuthKeys,AUTHKEYS.ico,AUTHKEYS;
+3
+3,0,0,Test,TEST.ico,TEST;
+3,0,0,Controls,CONTROLS.ico,CONTROLS;
+3,0,0,Discounts,DISCOUNTS.ico,DISCOUNTS;
+3,0,0,Utilities,UTILITIES.ico,UTILITIES;
+
+9,-1,1,Main...,main,
+9,0,0,About,0x0000001,ABOUT;
+9,0,0,Help,help.ico,HELP;
+
+99,0,2,Close Window,0x0000002,
+99,0,4,Max/Norm Window,0x0000003,
+

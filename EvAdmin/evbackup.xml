@@ -1,0 +1,339 @@
+<?xml> version "1.0" encoding="UTF-8" ?>
+<database name="eva">
+
+  <Table name="Products">
+
+    <def>
+      <item name="prod_sku">"char(12) NOT NULL"</item>
+      <item name="prodname">"char(64) NOT NULL"</item>
+      <item name="prodclass">"char(20) NOT NULL"</item>
+      <item name="skudesc">"char(255) NOT NULL"</item>
+      <item name="price">"decimal(8,2) NOT NULL"</item>
+      <item name="disc_class">"char(12) NULL"</item>
+      <item name="flags">"char(12) NULL"</item>
+    </def>
+
+    <row>
+      <item name="prod_sku">"CT1NEW"</item>
+      <item name="prodname">"CollectedThought"</item>
+      <item name="prodclass">"CT"</item>
+      <item name="skudesc">"CollectedThought 1.0 New License"</item>
+      <item name="price">"199.00"</item>
+      <item name="disc_class">"NEW"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"CV75NEW"</item>
+      <item name="prodname">"CADView 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"CADView 7.5 Drawing Viewer"</item>
+      <item name="price">"29.00"</item>
+      <item name="disc_class">"NONE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC65CD"</item>
+      <item name="prodname">"EasyCAD 6.5"</item>
+      <item name="prodclass">"Backup CD"</item>
+      <item name="skudesc">"EasyCAD 6.5 Backup CD"</item>
+      <item name="price">"15.00"</item>
+      <item name="disc_class">"NONE"</item>
+      <item name="flags">"S"</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC65NEW"</item>
+      <item name="prodname">"EasyCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 6.5 New License"</item>
+      <item name="price">"295.00"</item>
+      <item name="disc_class">"NEW"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC65UPD6"</item>
+      <item name="prodname">"EasyCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 6.5 Updade from EasyCAD 6"</item>
+      <item name="price">"125.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC65UPDEC"</item>
+      <item name="prodname">"EasyCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 6.5 Update from older EasyCAD"</item>
+      <item name="price">"150.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC75CD"</item>
+      <item name="prodname">"EasyCAD 7.5"</item>
+      <item name="prodclass">"Backup CD"</item>
+      <item name="skudesc">"EasyCAD 7.5 Backup CD"</item>
+      <item name="price">"16.00"</item>
+      <item name="disc_class">"NONE"</item>
+      <item name="flags">"S"</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC75NEW"</item>
+      <item name="prodname">"EasyCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 7.5 New License"</item>
+      <item name="price">"295.00"</item>
+      <item name="disc_class">"NEW"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC75UPD65"</item>
+      <item name="prodname">"EasyCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 7.5 Updadte from EasyCAD 6.5"</item>
+      <item name="price">"125.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC75UPD7"</item>
+      <item name="prodname">"EasyCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 7.5 Update from EasyCAD 7"</item>
+      <item name="price">"125.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"EC75UPDEC"</item>
+      <item name="prodname">"EasyCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"EasyCAD 7.5 Update from older EasyCAD"</item>
+      <item name="price">"150.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC65CD"</item>
+      <item name="prodname">"FastCAD 6.5"</item>
+      <item name="prodclass">"Backup CD"</item>
+      <item name="skudesc">"FastCAD 6.5 Backup CD"</item>
+      <item name="price">"15.00"</item>
+      <item name="disc_class">"NONE"</item>
+      <item name="flags">"S"</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC65NEW"</item>
+      <item name="prodname">"FastCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 6.5 New License"</item>
+      <item name="price">"595.00"</item>
+      <item name="disc_class">"NEW"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC65UPD"</item>
+      <item name="prodname">"FastCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 6.5 Update from older FastCAD"</item>
+      <item name="price">"195.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC65UPD6"</item>
+      <item name="prodname">"FastCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 6.5 Update from FastCAD 6"</item>
+      <item name="price">"125.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC65UPDEC"</item>
+      <item name="prodname">"FastCAD 6.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 6.5 Update from EasyCAD"</item>
+      <item name="price">"295.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC75CD"</item>
+      <item name="prodname">"FastCAD 7.5"</item>
+      <item name="prodclass">"Backup CD"</item>
+      <item name="skudesc">"FastCAD 7.5 Backup CD"</item>
+      <item name="price">"15.00"</item>
+      <item name="disc_class">"NONE"</item>
+      <item name="flags">"S"</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC75NEW"</item>
+      <item name="prodname">"FastCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 7.5 New License"</item>
+      <item name="price">"595.00"</item>
+      <item name="disc_class">"NEW"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC75UPD"</item>
+      <item name="prodname">"FastCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 7.5 Update from older FastCAD"</item>
+      <item name="price">"195.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC75UPD65"</item>
+      <item name="prodname">"FastCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 7.5 Update from FastCAD 6.5"</item>
+      <item name="price">"150.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC75UPD7"</item>
+      <item name="prodname">"FastCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 7.5 Update from FastCAD 7"</item>
+      <item name="price">"125.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+    <row>
+      <item name="prod_sku">"FC75UPDEC"</item>
+      <item name="prodname">"FastCAD 7.5"</item>
+      <item name="prodclass">"CAD"</item>
+      <item name="skudesc">"FastCAD 7.5 Update from EasyCAD"</item>
+      <item name="price">"295.00"</item>
+      <item name="disc_class">"UPDATE"</item>
+      <item name="flags">""</item>
+    </row>
+
+  </Table>
+
+  <Table name="Contacts">
+
+    <def>
+      <item name="cust_id">"int NOT NULL AUTO_INCREMENT"</item>
+      <item name="date">"TIMESTAMP"</item>
+      <item name="name">"char(80) NOT NULL"</item>
+      <item name="company">"char(60) NULL"</item>
+      <item name="address">"char(60) NOT NULL"</item>
+      <item name="address2">"char(60) NULL"</item>
+      <item name="city">"char(60) NOT NULL"</item>
+      <item name="state">"char(10) NULL"</item>
+      <item name="zip">"char(12) NULL"</item>
+      <item name="country">"char(60) NOT NULL"</item>
+      <item name="email">"char(255) NOT NULL"</item>
+      <item name="phone">"char(24) NOT NULL"</item>
+      <item name="type">"char(12) NULL"</item>
+      <item name="disc_group">"char(12) NULL"</item>
+      <item name="fwd_id">"int NULL"</item>
+    </def>
+
+  </Table>
+
+  <Table name="OrderReq">
+
+    <def>
+      <item name="req_id">"int NOT NULL AUTO_INCREMENT"</item>
+      <item name="date">"TIMESTAMP"</item>
+      <item name="name">"char(80) NOT NULL"</item>
+      <item name="company">"char(60) NULL"</item>
+      <item name="address">"char(60) NOT NULL"</item>
+      <item name="address2">"char(60) NULL"</item>
+      <item name="city">"char(60) NOT NULL"</item>
+      <item name="state">"char(10) NULL"</item>
+      <item name="zip">"char(12) NULL"</item>
+      <item name="country">"char(60) NOT NULL"</item>
+      <item name="email">"char(255) NOT NULL"</item>
+      <item name="phone">"char(24) NOT NULL"</item>
+      <item name="prodsku">"char(64) NOT NULL"</item>
+      <item name="price">"decimal(8,2) NOT NULL"</item>
+      <item name="quantity">"int NOT NULL"</item>
+      <item name="oldsn">"char(24) NULL"</item>
+      <item name="cdsku">"char(12) NOT NULL"</item>
+      <item name="cdquantity">"int NULL"</item>
+      <item name="cdprice">"decimal(8,2) NOT NULL"</item>
+      <item name="shipping">"decimal(8,2) NOT NULL"</item>
+      <item name="tax">"decimal(8,2) NOT NULL"</item>
+      <item name="notes">"text NULL"</item>
+      <item name="flags">"char(10) NULL"</item>
+      <item name="status">"char(12) NOT NULL"</item>
+      <item name="proddesc">"char(64) NOT NULL"</item>
+      <item name="cddesc">"char(64) NOT NULL"</item>
+      <item name="total">"decimal(8,2) NOT NULL"</item>
+      <item name="pmtfee">"decimal(8,2) NOT NULL"</item>
+      <item name="txnid">"char(24) NOT NULL"</item>
+      <item name="ordtype">"char(12) NOT NULL"</item>
+    </def>
+
+ 
+  </Table>
+
+  <Table name="AuthKeys">
+
+    <def>
+      <item name="key_id">"int NOT NULL AUTO_INCREMENT"</item>
+      <item name="ord_id">"int NULL"</item>
+      <item name="date">"TIMESTAMP"</item>
+      <item name="prod_sku">"char(20) NOT NULL"</item>
+      <item name="name">"char(80) NOT NULL"</item>
+      <item name="company">"char(60) NOT NULL"</item>
+      <item name="serno">"char(26) NULL"</item>
+      <item name="akey">"char(30) NULL"</item>
+      <item name="flags">"char(10) NULL"</item>
+      <item name="cust_id">"char(10) NULL"</item>
+    </def>
+
+  </Table>
+
+  <Table name="Controls">
+
+    <def>
+      <item name="ctl_id">"int NOT NULL AUTO_INCREMENT"</item>
+      <item name="aztax">"char(12) NOT NULL"</item>
+    </def>
+
+    <row>
+      <item name="ctl_id">"1"</item>
+      <item name="aztax">"8.11"</item>
+    </row>
+
+  </Table>
+
+  <Table name="Discounts">
+
+    <def>
+      <item name="discount_id">"int NOT NULL AUTO_INCREMENT"</item>
+      <item name="discount_group">"char(12) NOT NULL"</item>
+      <item name="discount_class">"char(12) NOT NULL"</item>
+      <item name="discount">"decimal(8,2) NOT NULL"</item>
+    </def>
+
+  </Table>
+</database>

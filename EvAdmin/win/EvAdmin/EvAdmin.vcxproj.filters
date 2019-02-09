@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Pages">
+      <UniqueIdentifier>{21e0122a-b3e7-4b6b-9c39-007acafbd1c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands">
+      <UniqueIdentifier>{9a4376d3-53b9-47f8-84a5-b917691236d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dialogs">
+      <UniqueIdentifier>{c5a8f4ec-ec69-4908-9ce7-b948ecbafe03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data Objects">
+      <UniqueIdentifier>{3494474c-79c4-46e8-8892-432fbc257f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="batch files">
+      <UniqueIdentifier>{fa5a0092-b52d-4871-85b2-cdd1cbee606e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\source\CDbAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CSendEMail.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\EvAdmin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CAuthKeysPageTable.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CContactsPageTable.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CControlsPageTable.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CDiscountsPageTable.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\COrdersPageTable.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CProductsPageTable.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CTDQueryPage.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CUtilitiesPage.cpp">
+      <Filter>Source Files\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CCmdBackupDB.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CCmdCreateDB.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CCmdPostOrdLog.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CCmdRestoreDB.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CDlgAbout.cpp">
+      <Filter>Source Files\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CDlgLogon.cpp">
+      <Filter>Source Files\dialogs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CAuthKeyDO.cpp">
+      <Filter>Source Files\Data Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CContactDO.cpp">
+      <Filter>Source Files\Data Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CControlDO.cpp">
+      <Filter>Source Files\Data Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CDiscountDO.cpp">
+      <Filter>Source Files\Data Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\CProductDO.cpp">
+      <Filter>Source Files\Data Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\OrderReqDO.cpp">
+      <Filter>Source Files\Data Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\source\CTDQueryPage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\EvAdmin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\EvAdmin.ini">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\rsc\EvAdmin.mnu">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+    <CustomBuildStep Include="..\..\rsc\EvAdmin.rsc">
+      <Filter>Resource Files</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xfrD.bat">
+      <Filter>batch files</Filter>
+    </None>
+    <None Include="xfrD64.bat">
+      <Filter>batch files</Filter>
+    </None>
+    <None Include="xfrDd.bat">
+      <Filter>batch files</Filter>
+    </None>
+    <None Include="xfrDd64.bat">
+      <Filter>batch files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

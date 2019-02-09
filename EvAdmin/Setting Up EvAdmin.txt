@@ -1,0 +1,34 @@
+Setting up to use EvAdmin:
+==============================================================
+This is a program that was never put into production, written
+in 2009. I've brought it up to date, and will continue to test
+and clean it up. I don't fully remember how it works, but it
+processed order requests and authorizations produced from web
+pages (not included) and works with everal tables in an "eva"
+database.
+
+In the file EvAdmin\rsc\EvAdmin.rsc:
+
+Resource 202 is the iupaddress/domain name for the MySQL server.
+203 is the data base name "eva". There is also this name 
+hard-coded in the program I think.
+
+Resource MLTEXT 102 is the login dialog and has the default 
+user name and password.
+
+Once you start the program and Logon is successful,
+Select Utilities from the Task menu,
+Click the "Enable Dangerous Operations" button,
+Click the "Create DAtabase" button,
+Click the "Enable Dangerous Operations" button,
+click the "Restore Database" button,
+Click the "Enable Dangerous Operations" button,
+click the Load Orders Log" button,
+and then select the "Products" page from the Tasks menu.
+
+
+Most of the database code is in CTDQueryPage.cpp. Each actual page 
+is essentially table driven. Extensive use is made of DataGrid
+controls. Actual database operations are provided by the toolkit's
+dbasesvc module.
+
