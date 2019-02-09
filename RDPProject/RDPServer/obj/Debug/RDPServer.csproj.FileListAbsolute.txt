@@ -1,0 +1,9 @@
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\bin\Debug\RDPServer.dll
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\bin\Debug\RDPServer.pdb
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\obj\Debug\RDPServer.dll
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\obj\Debug\RDPServer.pdb
+C:\Users\fsalas\Desktop\RDPServer\bin\Debug\RDPServer.dll
+C:\Users\fsalas\Desktop\RDPServer\bin\Debug\RDPServer.pdb
+C:\Users\fsalas\Desktop\RDPServer\obj\Debug\RDPServer.dll
+C:\Users\fsalas\Desktop\RDPServer\obj\Debug\RDPServer.pdb
+C:\Users\fsalas\Desktop\RDPServer\obj\Debug\RDPServer.csprojResolveAssemblyReference.cache

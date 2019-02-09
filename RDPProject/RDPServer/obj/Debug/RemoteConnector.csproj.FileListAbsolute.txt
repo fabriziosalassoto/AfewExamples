@@ -1,0 +1,5 @@
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\bin\Debug\RemoteConnector.dll
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\bin\Debug\RemoteConnector.pdb
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\obj\Debug\RemoteConnector.dll
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\obj\Debug\RemoteConnector.pdb
+C:\Users\fsalas\Desktop\RDPForm\RemoteConnector\obj\Debug\RemoteConnector.csprojResolveAssemblyReference.cache

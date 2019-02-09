@@ -1,0 +1,10 @@
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\obj\Debug\RDPForm.RDPServer.resources
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\obj\Debug\RDPForm.Properties.Resources.resources
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\obj\Debug\RDPForm.csproj.GenerateResource.Cache
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\bin\Debug\RDPForm.exe
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\bin\Debug\RDPForm.pdb
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\bin\Debug\RemoteConnector.dll
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\bin\Debug\RemoteConnector.pdb
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\obj\Debug\RDPForm.csprojResolveAssemblyReference.cache
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\obj\Debug\RDPForm.exe
+C:\Users\fsalas\Desktop\RDPForm\RDPForm\obj\Debug\RDPForm.pdb

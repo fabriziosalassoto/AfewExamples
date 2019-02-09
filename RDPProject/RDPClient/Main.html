@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>RDP Client</title>
+        <link rel="stylesheet" type="text/css" href="Main.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  			    	
+	    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>     
+        <script language="javascript1.7" src="main.js"></script>    
+    </head>
+    <body>                                                   
+        <Table ID="Table1" runat="server">
+            <tr>
+                <td class="auto-style3">
+                    <h2 id="mytitle">RDP Client</h2>                                    
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">IP Address</td>
+                <td>
+                    <input type="text" ID="txtIP" value="127.0.0.1" readonly="true">
+                </td>            
+            </tr>
+            <tr>
+                <td class="auto-style3">Starting Port:</td>
+                <td>
+                    <input type="text" ID="txtStartingPort" value="1400" readonly="true">
+
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Ending Port:</td>
+                <td>
+                    <input type="text" ID="txtEndingPort" value="1450" readonly="true">
+
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <input type="button" ID="btnClick" value="Connect" onclick="GetScreenShot()">
+                </td>
+                <td>
+                    
+                </td>                
+            </tr>            
+        </Table>
+
+         <div id="Widget">
+            <Table ID="Table2" runat="server">            
+                <caption id="myTitle2">Form Edition</caption>
+                <tr>
+                    <td>Mouse Position:</td>
+                    <td>    
+                        <input type="text" ID="MousePosition" value="" readonly="true">          
+                    </td>            
+                </tr>
+                <tr>
+                    <td>Control Selected:</td>
+                    <td>
+                        <input type="text" ID="ControlSelected" value="" readonly="true">          
+                    </td>
+                </tr>
+                <tr>
+                    <td>Control's value:</td>
+                    <td>
+                        <input type="text" ID="ControlValue" value="">          
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" ID="BtnUpdate" value="Update" onclick="ControlUpdate()">
+                    </td>                
+                </tr>            
+            </Table>         
+        </div>                        
+        <img id="myImage">                        
+    </body>
+</html>
