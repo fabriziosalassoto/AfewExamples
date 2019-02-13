@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="OpenConnection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="connectionRequest" type="tns:ClsConnectionRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsConnectionRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="FirstConnection" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComputerConfigurationInfo" type="tns:ClsComputerConfigurationInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="HostIPInfo" type="tns:ClsHostIPInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsComputerConfigurationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ComputerHDSerialNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComputerMacAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComputerName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsHostIPInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="HostPublicIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HostLocalIP" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OpenConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpenConnectionResult" type="tns:ClsConnectionResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsConnectionResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ActionToTake" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="HostPublicIP" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CslaCredentials" type="tns:CslaCredentials" />
+      <s:complexType name="CslaCredentials">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ComputerSerialNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="CloseConnection">
+        <s:complexType />
+      </s:element>
+      <s:element name="CloseConnectionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="KeepConnection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hostIPInfo" type="tns:ClsHostIPInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KeepConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KeepConnectionResult" type="tns:ClsConnectionResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvertising">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="subscriberTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAdvertisingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAdvertisingResult" type="tns:ClsAdvertisingInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsAdvertisingInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AdHistoryID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ADUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ADHeight" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ADWidth" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetSystemConfiguration">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemConfigurationInfo" type="tns:ClsComputerConfigurationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetSystemConfigurationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AdDisplay">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdHistoryInfo" type="tns:ClsAdvertisingInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdDisplayResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AdClickThru">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdHistoryInfo" type="tns:ClsAdvertisingInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdClickThruResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SubscriberCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="SubscriberCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberCountResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConnectedSubscriberCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="ConnectedSubscriberCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ConnectedSubscriberCountResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DisConnectedSubscriberCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="DisConnectedSubscriberCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DisConnectedSubscriberCountResult" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsConnectedSubscriber">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsConnectedSubscriberResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsConnectedSubscriberResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddSubsciberAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountData" type="tns:ClsSubscriberAccountData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ClsSubscriberAccountData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Connected" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InstallClientProgram" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConfigurationHasChanged" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ComputerSerialNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WebPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HintByPassOne" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HintByPassTwo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConnectionHistory" type="tns:ClsSubscriberConnectionHistoryData" />
+          <s:element minOccurs="0" maxOccurs="1" name="StolenReport" type="tns:ClsSubscriberStolenReportData" />
+          <s:element minOccurs="0" maxOccurs="1" name="Demographics" type="tns:ArrayOfClsSubscriberDemographicData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsSubscriberConnectionHistoryData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="HostIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HostLocalIP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConnectionDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ConnectionTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="DNSResolutionIP" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IPState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IPCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityStatus" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsSubscriberStolenReportData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateReportMissing" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastKnownLocationDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateReportFound" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActiveForAlerts" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActionToTake" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfClsSubscriberDemographicData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClsSubscriberDemographicData" nillable="true" type="tns:ClsSubscriberDemographicData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClsSubscriberDemographicData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Answer" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddSubsciberAccountResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EditSubsciberAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AccountData" type="tns:ClsSubscriberAccountData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditSubsciberAccountResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSubscriberAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubscriberAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubscriberAccountResult" type="tns:ClsSubscriberAccountData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UninstallClientProgram">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UninstallClientProgramResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChangeSubscriberWebPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeSubscriberWebPasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChangeSubscriberComputerPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="newPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChangeSubscriberComputerPasswordResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSubscriberStolenReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubscriberStolenReportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubscriberStolenReportResult" type="tns:ClsSubscriberStolenReportData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddSubsciberStolenReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="stolenReportData" type="tns:ClsSubscriberStolenReportData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddSubsciberStolenReportResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EditSubsciberStolenReport">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SubscriberID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="stolenReportData" type="tns:ClsSubscriberStolenReportData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EditSubsciberStolenReportResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="OpenConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:OpenConnection" />
+  </wsdl:message>
+  <wsdl:message name="OpenConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:OpenConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpenConnectionCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="CloseConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:CloseConnection" />
+  </wsdl:message>
+  <wsdl:message name="CloseConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:CloseConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CloseConnectionCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="KeepConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:KeepConnection" />
+  </wsdl:message>
+  <wsdl:message name="KeepConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:KeepConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="KeepConnectionCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvertisingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAdvertising" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvertisingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAdvertisingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAdvertisingCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="SetSystemConfigurationSoapIn">
+    <wsdl:part name="parameters" element="tns:SetSystemConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="SetSystemConfigurationSoapOut">
+    <wsdl:part name="parameters" element="tns:SetSystemConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetSystemConfigurationCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="AdDisplaySoapIn">
+    <wsdl:part name="parameters" element="tns:AdDisplay" />
+  </wsdl:message>
+  <wsdl:message name="AdDisplaySoapOut">
+    <wsdl:part name="parameters" element="tns:AdDisplayResponse" />
+  </wsdl:message>
+  <wsdl:message name="AdDisplayCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="AdClickThruSoapIn">
+    <wsdl:part name="parameters" element="tns:AdClickThru" />
+  </wsdl:message>
+  <wsdl:message name="AdClickThruSoapOut">
+    <wsdl:part name="parameters" element="tns:AdClickThruResponse" />
+  </wsdl:message>
+  <wsdl:message name="AdClickThruCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="SubscriberCountSoapIn">
+    <wsdl:part name="parameters" element="tns:SubscriberCount" />
+  </wsdl:message>
+  <wsdl:message name="SubscriberCountSoapOut">
+    <wsdl:part name="parameters" element="tns:SubscriberCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubscriberCountCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="ConnectedSubscriberCountSoapIn">
+    <wsdl:part name="parameters" element="tns:ConnectedSubscriberCount" />
+  </wsdl:message>
+  <wsdl:message name="ConnectedSubscriberCountSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectedSubscriberCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConnectedSubscriberCountCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="DisConnectedSubscriberCountSoapIn">
+    <wsdl:part name="parameters" element="tns:DisConnectedSubscriberCount" />
+  </wsdl:message>
+  <wsdl:message name="DisConnectedSubscriberCountSoapOut">
+    <wsdl:part name="parameters" element="tns:DisConnectedSubscriberCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="DisConnectedSubscriberCountCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="IsConnectedSubscriberSoapIn">
+    <wsdl:part name="parameters" element="tns:IsConnectedSubscriber" />
+  </wsdl:message>
+  <wsdl:message name="IsConnectedSubscriberSoapOut">
+    <wsdl:part name="parameters" element="tns:IsConnectedSubscriberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsConnectedSubscriberCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="AddSubsciberAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:AddSubsciberAccount" />
+  </wsdl:message>
+  <wsdl:message name="AddSubsciberAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:AddSubsciberAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSubsciberAccountCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="EditSubsciberAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:EditSubsciberAccount" />
+  </wsdl:message>
+  <wsdl:message name="EditSubsciberAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:EditSubsciberAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditSubsciberAccountCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubscriberAccount" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubscriberAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberAccountCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="UninstallClientProgramSoapIn">
+    <wsdl:part name="parameters" element="tns:UninstallClientProgram" />
+  </wsdl:message>
+  <wsdl:message name="UninstallClientProgramSoapOut">
+    <wsdl:part name="parameters" element="tns:UninstallClientProgramResponse" />
+  </wsdl:message>
+  <wsdl:message name="UninstallClientProgramCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberWebPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeSubscriberWebPassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberWebPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeSubscriberWebPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberWebPasswordCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberComputerPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:ChangeSubscriberComputerPassword" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberComputerPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:ChangeSubscriberComputerPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChangeSubscriberComputerPasswordCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberStolenReportSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubscriberStolenReport" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberStolenReportSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubscriberStolenReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriberStolenReportCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="AddSubsciberStolenReportSoapIn">
+    <wsdl:part name="parameters" element="tns:AddSubsciberStolenReport" />
+  </wsdl:message>
+  <wsdl:message name="AddSubsciberStolenReportSoapOut">
+    <wsdl:part name="parameters" element="tns:AddSubsciberStolenReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddSubsciberStolenReportCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:message name="EditSubsciberStolenReportSoapIn">
+    <wsdl:part name="parameters" element="tns:EditSubsciberStolenReport" />
+  </wsdl:message>
+  <wsdl:message name="EditSubsciberStolenReportSoapOut">
+    <wsdl:part name="parameters" element="tns:EditSubsciberStolenReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditSubsciberStolenReportCslaCredentials">
+    <wsdl:part name="CslaCredentials" element="tns:CslaCredentials" />
+  </wsdl:message>
+  <wsdl:portType name="SCTServerSoap">
+    <wsdl:operation name="OpenConnection">
+      <wsdl:input message="tns:OpenConnectionSoapIn" />
+      <wsdl:output message="tns:OpenConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseConnection">
+      <wsdl:input message="tns:CloseConnectionSoapIn" />
+      <wsdl:output message="tns:CloseConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KeepConnection">
+      <wsdl:input message="tns:KeepConnectionSoapIn" />
+      <wsdl:output message="tns:KeepConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvertising">
+      <wsdl:input message="tns:GetAdvertisingSoapIn" />
+      <wsdl:output message="tns:GetAdvertisingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSystemConfiguration">
+      <wsdl:input message="tns:SetSystemConfigurationSoapIn" />
+      <wsdl:output message="tns:SetSystemConfigurationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AdDisplay">
+      <wsdl:input message="tns:AdDisplaySoapIn" />
+      <wsdl:output message="tns:AdDisplaySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AdClickThru">
+      <wsdl:input message="tns:AdClickThruSoapIn" />
+      <wsdl:output message="tns:AdClickThruSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubscriberCount">
+      <wsdl:input message="tns:SubscriberCountSoapIn" />
+      <wsdl:output message="tns:SubscriberCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConnectedSubscriberCount">
+      <wsdl:input message="tns:ConnectedSubscriberCountSoapIn" />
+      <wsdl:output message="tns:ConnectedSubscriberCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DisConnectedSubscriberCount">
+      <wsdl:input message="tns:DisConnectedSubscriberCountSoapIn" />
+      <wsdl:output message="tns:DisConnectedSubscriberCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsConnectedSubscriber">
+      <wsdl:input message="tns:IsConnectedSubscriberSoapIn" />
+      <wsdl:output message="tns:IsConnectedSubscriberSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSubsciberAccount">
+      <wsdl:input message="tns:AddSubsciberAccountSoapIn" />
+      <wsdl:output message="tns:AddSubsciberAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditSubsciberAccount">
+      <wsdl:input message="tns:EditSubsciberAccountSoapIn" />
+      <wsdl:output message="tns:EditSubsciberAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberAccount">
+      <wsdl:input message="tns:GetSubscriberAccountSoapIn" />
+      <wsdl:output message="tns:GetSubscriberAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UninstallClientProgram">
+      <wsdl:input message="tns:UninstallClientProgramSoapIn" />
+      <wsdl:output message="tns:UninstallClientProgramSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberWebPassword">
+      <wsdl:input message="tns:ChangeSubscriberWebPasswordSoapIn" />
+      <wsdl:output message="tns:ChangeSubscriberWebPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberComputerPassword">
+      <wsdl:input message="tns:ChangeSubscriberComputerPasswordSoapIn" />
+      <wsdl:output message="tns:ChangeSubscriberComputerPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberStolenReport">
+      <wsdl:input message="tns:GetSubscriberStolenReportSoapIn" />
+      <wsdl:output message="tns:GetSubscriberStolenReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSubsciberStolenReport">
+      <wsdl:input message="tns:AddSubsciberStolenReportSoapIn" />
+      <wsdl:output message="tns:AddSubsciberStolenReportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditSubsciberStolenReport">
+      <wsdl:input message="tns:EditSubsciberStolenReportSoapIn" />
+      <wsdl:output message="tns:EditSubsciberStolenReportSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SCTServerSoap" type="tns:SCTServerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenConnection">
+      <soap:operation soapAction="http://tempuri.org/OpenConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:OpenConnectionCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseConnection">
+      <soap:operation soapAction="http://tempuri.org/CloseConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CloseConnectionCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepConnection">
+      <soap:operation soapAction="http://tempuri.org/KeepConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:KeepConnectionCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvertising">
+      <soap:operation soapAction="http://tempuri.org/GetAdvertising" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAdvertisingCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSystemConfiguration">
+      <soap:operation soapAction="http://tempuri.org/SetSystemConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SetSystemConfigurationCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdDisplay">
+      <soap:operation soapAction="http://tempuri.org/AdDisplay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AdDisplayCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdClickThru">
+      <soap:operation soapAction="http://tempuri.org/AdClickThru" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AdClickThruCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubscriberCount">
+      <soap:operation soapAction="http://tempuri.org/SubscriberCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SubscriberCountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConnectedSubscriberCount">
+      <soap:operation soapAction="http://tempuri.org/ConnectedSubscriberCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConnectedSubscriberCountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisConnectedSubscriberCount">
+      <soap:operation soapAction="http://tempuri.org/DisConnectedSubscriberCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:DisConnectedSubscriberCountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsConnectedSubscriber">
+      <soap:operation soapAction="http://tempuri.org/IsConnectedSubscriber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:IsConnectedSubscriberCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubsciberAccount">
+      <soap:operation soapAction="http://tempuri.org/AddSubsciberAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddSubsciberAccountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSubsciberAccount">
+      <soap:operation soapAction="http://tempuri.org/EditSubsciberAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:EditSubsciberAccountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberAccount">
+      <soap:operation soapAction="http://tempuri.org/GetSubscriberAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSubscriberAccountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UninstallClientProgram">
+      <soap:operation soapAction="http://tempuri.org/UninstallClientProgram" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UninstallClientProgramCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberWebPassword">
+      <soap:operation soapAction="http://tempuri.org/ChangeSubscriberWebPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ChangeSubscriberWebPasswordCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberComputerPassword">
+      <soap:operation soapAction="http://tempuri.org/ChangeSubscriberComputerPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ChangeSubscriberComputerPasswordCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberStolenReport">
+      <soap:operation soapAction="http://tempuri.org/GetSubscriberStolenReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSubscriberStolenReportCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubsciberStolenReport">
+      <soap:operation soapAction="http://tempuri.org/AddSubsciberStolenReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddSubsciberStolenReportCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSubsciberStolenReport">
+      <soap:operation soapAction="http://tempuri.org/EditSubsciberStolenReport" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:EditSubsciberStolenReportCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SCTServerSoap12" type="tns:SCTServerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenConnection">
+      <soap12:operation soapAction="http://tempuri.org/OpenConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:OpenConnectionCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseConnection">
+      <soap12:operation soapAction="http://tempuri.org/CloseConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CloseConnectionCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepConnection">
+      <soap12:operation soapAction="http://tempuri.org/KeepConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:KeepConnectionCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdvertising">
+      <soap12:operation soapAction="http://tempuri.org/GetAdvertising" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAdvertisingCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSystemConfiguration">
+      <soap12:operation soapAction="http://tempuri.org/SetSystemConfiguration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SetSystemConfigurationCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdDisplay">
+      <soap12:operation soapAction="http://tempuri.org/AdDisplay" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AdDisplayCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdClickThru">
+      <soap12:operation soapAction="http://tempuri.org/AdClickThru" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AdClickThruCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubscriberCount">
+      <soap12:operation soapAction="http://tempuri.org/SubscriberCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SubscriberCountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConnectedSubscriberCount">
+      <soap12:operation soapAction="http://tempuri.org/ConnectedSubscriberCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConnectedSubscriberCountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisConnectedSubscriberCount">
+      <soap12:operation soapAction="http://tempuri.org/DisConnectedSubscriberCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:DisConnectedSubscriberCountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsConnectedSubscriber">
+      <soap12:operation soapAction="http://tempuri.org/IsConnectedSubscriber" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:IsConnectedSubscriberCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubsciberAccount">
+      <soap12:operation soapAction="http://tempuri.org/AddSubsciberAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddSubsciberAccountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSubsciberAccount">
+      <soap12:operation soapAction="http://tempuri.org/EditSubsciberAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:EditSubsciberAccountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberAccount">
+      <soap12:operation soapAction="http://tempuri.org/GetSubscriberAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSubscriberAccountCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UninstallClientProgram">
+      <soap12:operation soapAction="http://tempuri.org/UninstallClientProgram" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UninstallClientProgramCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberWebPassword">
+      <soap12:operation soapAction="http://tempuri.org/ChangeSubscriberWebPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ChangeSubscriberWebPasswordCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangeSubscriberComputerPassword">
+      <soap12:operation soapAction="http://tempuri.org/ChangeSubscriberComputerPassword" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ChangeSubscriberComputerPasswordCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriberStolenReport">
+      <soap12:operation soapAction="http://tempuri.org/GetSubscriberStolenReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSubscriberStolenReportCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddSubsciberStolenReport">
+      <soap12:operation soapAction="http://tempuri.org/AddSubsciberStolenReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddSubsciberStolenReportCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditSubsciberStolenReport">
+      <soap12:operation soapAction="http://tempuri.org/EditSubsciberStolenReport" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:EditSubsciberStolenReportCslaCredentials" part="CslaCredentials" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SCTServer">
+    <wsdl:port name="SCTServerSoap" binding="tns:SCTServerSoap">
+      <soap:address location="http://localhost:1000/SCTServer/SCTServer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SCTServerSoap12" binding="tns:SCTServerSoap12">
+      <soap12:address location="http://localhost:1000/SCTServer/SCTServer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

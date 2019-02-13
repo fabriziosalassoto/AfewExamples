@@ -1,0 +1,9 @@
+bin\Release\ServicedCOM.dll
+bin\Release\ServicedCOM.pdb
+bin\Release\ServicedCOM.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\ServicedCOM.Resources.resources
+obj\Release\ServicedCOM.vbproj.GenerateResource.Cache
+obj\Release\ServicedCOM.dll
+obj\Release\ServicedCOM.xml
+obj\Release\ServicedCOM.pdb

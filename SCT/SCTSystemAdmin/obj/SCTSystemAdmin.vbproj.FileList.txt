@@ -1,0 +1,9 @@
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\SCTSystemAdmin.Resources.resources
+obj\Release\SCTSystemAdmin.vbproj.GenerateResource.Cache
+bin\Release\SCTSystemAdminvb.dll
+bin\Release\SCTSystemAdminvb.pdb
+bin\Release\SCTSystemAdminvb.xml
+obj\Release\SCTSystemAdminvb.dll
+obj\Release\SCTSystemAdminvb.xml
+obj\Release\SCTSystemAdminvb.pdb

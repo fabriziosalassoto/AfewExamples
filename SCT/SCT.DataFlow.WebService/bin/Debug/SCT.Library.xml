@@ -1,0 +1,216 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SCT.Library
+</name>
+</assembly>
+<members>
+<member name="M:SCT.Library.Advertiser.Project.ClsAdHistory.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserAdHistory.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsAdHistory.GetAdvertiserAdHistoryStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccountInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserAccount.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccountInfo.LoadObjectData(System.Int64)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="accountId"></param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsNote.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserNotes.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsNote.GetAdvertiserNoteStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccount.LoadObjectData(SCT.DataAccess.DAClsappSubscribersAccounts.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccount.GetSubscriberAccountStruct">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContact.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserContactInfo.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContact.GetAdvertiserProjectContactInfoStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccount.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserAccount.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccount.GetAdvertiserAccountStruct">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContactInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserContactInfo.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContactInfo.LoadObjectData(System.Int64)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="contactId"></param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProjectInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjects.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProjectInfo.LoadObjectData(System.Int64)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="projectId"></param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsDemographic.LoadObjectData(SCT.DataAccess.DAClsappSubscribersDemographics.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsDemographic.GetSubscriberDemographicStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsStolenReport.LoadObjectData(SCT.DataAccess.DAClsappSubscriberStolenReports.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsStolenReport.GetSubscriberStolenReportStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsDemographic.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserDemographics.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsDemographic.GetAdvertiserDemographicStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccountInfo.LoadObjectData(SCT.DataAccess.DAClsappSubscribersAccounts.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccountInfo.LoadObjectData(System.Int64)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="accountId"></param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsConnectionHistory.LoadObjectData(SCT.DataAccess.DAClsappSubscriberConnectionHistory.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsConnectionHistory.GetSubscriberConnectionHistoryStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProject.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjects.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProject.GetAdvertiserProjectStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsPrice.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsPrice.GetAdvertiserProjectPriceInfoStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member><member name="P:SCT.Library.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SCT.Library.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SCT.Library.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SCT.Library.Advertiser.ClsToDo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserToDo.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsToDo.GetAdvertiserToDoStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<returns>Structure with data</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

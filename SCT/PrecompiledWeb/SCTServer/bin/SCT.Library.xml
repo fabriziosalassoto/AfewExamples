@@ -1,0 +1,751 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SCT.Library
+</name>
+</assembly>
+<members>
+<member name="M:SCT.Library.ClsFormInfo.LoadObjectData(SCT.DataAccess.DAClsprgForms.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileGroupInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeGroupPermissions.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="GroupPermissions">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsAdHistory.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsAdHistory.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacle.LoadObjectChildData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacle.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacle.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleFormInfo.LoadObjectData(SCT.DataAccess.DAClsprgSubscriberBinnacleForms.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsUserInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeUsers.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccountInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserAccount.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.Invoice.ClsDetail.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.Invoice.ClsDetail.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleTableFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeBinnacleTableFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroupProfile.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeProfiles.Struct)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroupProfile.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeProfiles.Struct,System.Int64,System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroupProfile.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Contact.ClsNote.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Contact.ClsNote.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccount.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccount.LoadTableStruct">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleInfo.LoadObjectData(SCT.DataAccess.DAClsprgSubscriberBinnacle.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleTableField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleTableField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleForm.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleForm.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContact.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContact.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleTable.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleTable.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleForm.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleForm.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdvertiserBinnacle.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsFormProfile.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeProfiles.Struct)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsFormProfile.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeProfiles.Struct,System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsFormProfile.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileGroup.LoadObjectData(SCT.DataAccess.DAClsprgGroups.Struct)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileGroup.LoadObjectData(SCT.DataAccess.DAClsprgGroups.Struct,System.Int64,System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileGroup.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsDemographicInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserDemographics.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleFormInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeBinnacleForms.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleTableField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleTableField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleTableInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeBinnacleTables.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleFormInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdvertiserBinnacleForms.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsBinnacleFormEntry.LoadObjectChildData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsBinnacleFormEntry.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsNoteInfo.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccount.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsAccount.LoadTableStruct">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleForm.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleForm.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeBinnacle.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileFormInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeFormPermissions.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="FormPermissions">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleTableInfo.LoadObjectData(SCT.DataAccess.DAClsprgSubscriberBinnacleTables.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsFormProfileInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeFormPermissions.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="FormPermissions">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsOperationInfo.LoadObjectData(SCT.DataAccess.DAClsprgOperations.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsContactInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserContactInfo.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProjectInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjects.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceipt.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceipt.LoadTableStruct">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceiptProject.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjects.Struct)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceiptProject.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjects.Struct,System.Int64,System.Double,System.Double,System.Double)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceiptProject.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsDemographic.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsDemographic.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsStolenReport.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsStolenReport.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleFormField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleFormField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleFormFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgSubscriberBinnacleFormFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsDemographic.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsDemographic.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsReceiptInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjectReceipts.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="projectReceipt">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleTableInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdvertiserBinnacleTables.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsInvoiceInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjectInvoices.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsAccountInfo.LoadObjectData(SCT.DataAccess.DAClsappSubscribersAccounts.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Administrator.ClsBinnacleFormFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeBinnacleFormFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleTable.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleTable.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleTableFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdvertiserBinnacleTableFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleTableFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgSubscriberBinnacleTableFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleFormField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleFormField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsToDoInfo.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeProfiles.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsAdHistoryInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserAdHistory.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsConnectionHistory.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsConnectionHistory.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleFormFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdvertiserBinnacleFormFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsForm.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsForm.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroup.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroup.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroupProfileInfo.LoadObjectData(SCT.DataAccess.DAClsprgAdministrativeGroupPermissions.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="GroupPermissions">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProject.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsProject.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacle.LoadObjectChildData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacle.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacle.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsBinnacleFormFieldEntry.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsBinnacleFormEntryInfo.LoadObjectData(SCT.DataAccess.DAClsprgBinnacleFormEntry.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileForm.LoadObjectData(SCT.DataAccess.DAClsprgForms.Struct)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileForm.LoadObjectData(SCT.DataAccess.DAClsprgForms.Struct,System.Int64,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfileForm.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsTransactionInvoiceInfo.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleFormField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleFormField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsGroupInfo.LoadObjectData(SCT.DataAccess.DAClsprgGroups.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsUser.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsUser.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsPrice.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsPrice.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsTransactionReceiptInfo.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="P:SCT.Library.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SCT.Library.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SCT.Library.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleTable.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacleTable.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsFieldInfo.LoadObjectData(SCT.DataAccess.DAClsprgFields.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsPriceInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceiptProjectInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserProjectReceipts.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="projectReceipt">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleTableField.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsBinnacleTableField.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsBinnacleUserInfo.LoadObjectData(SCT.DataAccess.DAClsprgBinnacleUsers.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacle.LoadObjectChildData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacle.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Subscriber.ClsBinnacle.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsOperation.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsOperation.LoadTableStruct">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfile.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.ClsProfile.LoadTableStruct(System.Object[])">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsInvoice.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsInvoice.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Contact.ClsToDo.LoadObjectData">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Contact.ClsToDo.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsReceipt.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserReceipts.Struct)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsReceipt.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserReceipts.Struct,System.Int64,System.Double,System.Double,System.Double)">
+	<summary>
+ Populate the data of the object with the fetched data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.Project.ClsReceipt.LoadTableStruct(System.Object)">
+	<summary>
+ Collect the data of the object to fill to a structure of data and returns the structure 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.Library.Advertiser.ClsReceiptInfo.LoadObjectData(SCT.DataAccess.DAClsappAdvertiserReceipts.Struct)">
+	<summary>
+ Load the data of the object with the fetched data
+ </summary>
+	<param name="Struct">Struct with the data</param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

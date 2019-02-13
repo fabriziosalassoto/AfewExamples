@@ -1,0 +1,62 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DBConnection
+</name>
+</assembly>
+<members>
+<member name="P:DBConnection.DBClsConnection.ConnectionString">
+	<summary>
+ Get or set ConnectionString used to open the data base
+ </summary>
+	<value>ConnectionString</value>
+	<returns>ConnectionString</returns>
+	<remarks></remarks>
+</member><member name="M:DBConnection.DBClsConnection.#ctor">
+	<summary>
+ Create a new DBClsConnection instance
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DBConnection.DBClsConnection.#ctor(System.String)">
+	<summary>
+ Create a new DBClsConnection instance
+ </summary>
+	<param name="pConnectionString">ConnectionString</param>
+	<remarks></remarks>
+</member><member name="M:DBConnection.DBClsConnection.ConnectionToDataBase(System.String)">
+	<summary>
+ Opens the connection to the data base and creates a SqlCommand 
+ associated to the connection with the SQL Statement to execute 
+ </summary>
+	<param name="pSql">Sql Statement to execute</param>
+	<remarks></remarks>
+</member><member name="M:DBConnection.DBClsConnection.ExecuteReader(System.String)">
+	<summary>
+ Executes select statement and return data reader with the data.
+ </summary>
+	<param name="pSql">Select statement.</param>
+	<returns>Data reader with tha data.</returns>
+	<remarks></remarks>
+</member><member name="M:DBConnection.DBClsConnection.ExecuteNonQuery(System.String)">
+	<summary>
+ Executes Transact-SQL statement and return the number of rows affected.
+ </summary>
+	<param name="pSql">Transact-SQL statement to execute.</param>
+	<returns>Number of rows affected.</returns>
+	<remarks></remarks>
+</member><member name="M:DBConnection.DBClsConnection.ExecuteScalar(System.String)">
+	<summary>
+ Executes the query and return sentence the result set returned by the query.
+ </summary>
+	<param name="pSql">Query to execute.</param>
+	<returns>Result of the query.</returns>
+	<remarks></remarks>
+</member><member name="T:DBConnection.DBClsConnection">
+	<summary>
+ Represents a connection the data base SQL Server and allows to make transactions with her directly
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

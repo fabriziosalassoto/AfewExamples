@@ -1,0 +1,9 @@
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\bin\Release\DBConnection.dll
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\bin\Release\DBConnection.pdb
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\bin\Release\DBConnection.xml
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\obj\Release\DBConnection.Resources.resources
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\obj\Release\DBConnection.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\obj\Release\DBConnection.dll
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\obj\Release\DBConnection.xml
+C:\Documents and Settings\Nestor\My Documents\Visual Studio 2005\Projects\ServerComputerTracking\SCT\DBConnection\obj\Release\DBConnection.pdb

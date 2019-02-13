@@ -1,0 +1,9 @@
+bin\Release\EnterpriseServices.dll
+bin\Release\EnterpriseServices.pdb
+bin\Release\EnterpriseServices.xml
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\EnterpriseServices.Resources.resources
+obj\Release\EnterpriseServices.vbproj.GenerateResource.Cache
+obj\Release\EnterpriseServices.dll
+obj\Release\EnterpriseServices.xml
+obj\Release\EnterpriseServices.pdb

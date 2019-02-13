@@ -1,0 +1,104 @@
+<%@ master language="VB" inherits="MasterPages_MasterPage, App_Web_dyyus6c0" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>IP Tracking System - Subscriber</title>
+<script type="text/javascript" src="../JScript/JScript.js"></script>    
+</head>
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0"  onload="MM_preloadImages('../images/top_image2.gif')">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="padding-right: 0px; padding-left: 0px;
+            padding-bottom: 0px; margin: 0px; padding-top: 0px; height: 650px" width="100%">
+            <tr>
+                <td colspan="2" style="height: 50px; padding-right: 0px; padding-left: 0px; font-weight: bold; font-size: 20pt; padding-bottom: 0px; margin: 0px; color: white; padding-top: 0px; font-style: italic; font-family: 'Comic Sans MS';" bgcolor="#000000">
+                    <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','../images/top_image2.gif',1)"><img src="../Images/top_image1.gif" name="Image5" height="125" border="0" id="Image" style="width: 100%" width="0" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 30px; border-top-width: thin; border-left-width: thin; border-left-color: #999999; border-bottom-width: thin; border-bottom-color: #999999; border-top-color: #999999; border-right-width: thin; border-right-color: #999999; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px;" bgcolor="#999999">
+                    <table style="width: 100%; height: 100%">
+                        <tr>
+                            <td style="width: 925px;" valign="middle" align="right">
+                                &nbsp; &nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblUserName" runat="server" Font-Bold="True" Font-Names="Verdana"
+                        Font-Size="10pt" ForeColor="White" Width="400px" Font-Italic="False"></asp:Label></td>
+                            <td align="center" valign="middle" style="width: 75px">
+                                <asp:Menu ID="mnuSignOut" runat="server" DynamicHorizontalOffset="2"
+                                    Font-Names="Verdana" Font-Size="10pt" ForeColor="Gray" StaticDisplayLevels="3"
+                                    StaticSubMenuIndent="10px" Orientation="Horizontal" StaticTopSeparatorImageUrl="~/Images/Tab.gif" Width="50px">
+                                    <LevelMenuItemStyles>
+                                        <asp:MenuItemStyle Font-Bold="True" Font-Names="Verdana" Font-Size="10pt"
+                                            Font-Underline="False" ForeColor="White" />
+                                    </LevelMenuItemStyles>
+                                    <StaticMenuItemStyle Font-Bold="False" Font-Names="Verdana" ForeColor="#990000"
+                                        HorizontalPadding="5px" />
+                                    <DynamicHoverStyle BackColor="DarkGray" ForeColor="Black" />
+                                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                                    <StaticSelectedStyle Font-Bold="True" Font-Italic="False" Font-Names="Verdana"
+                                        Font-Size="10pt" Font-Underline="False" />
+                                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <Items>
+                                        <asp:MenuItem Text="Sign Out" Value="Sign Out"></asp:MenuItem>
+                                    </Items>
+                                    <StaticHoverStyle BorderColor="White" Font-Bold="True" Font-Italic="True"
+                                        Font-Names="Verdana" Font-Size="10pt" ForeColor="#990000" Font-Underline="True" />
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                   </td>
+            </tr>
+            <tr>
+                <td style="width: 150px; height: 525px; padding-right: 10px; padding-left: 10px; padding-top: 10px; border-top-width: thin; border-left-width: thin; border-left-color: gray; border-bottom-width: thin; border-bottom-color: gray; border-top-color: gray; padding-bottom: 10px; border-right-width: thin; border-right-color: gray;" align="left" valign="top">
+                    <table style="border-right: silver 1px solid; border-top: silver 1px solid; border-left: silver 1px solid;
+                        width: 100%; border-bottom: silver 1px solid; height: 100%; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px;">
+                        <tr>
+                            <td style="border-top-width: thin; border-left-width: thin; border-left-color: gray;
+                                border-bottom-width: thin; border-bottom-color: gray; padding-bottom: 10px; border-top-color: gray;
+                                padding-top: 10px; border-right-width: thin; border-right-color: gray; padding-right: 0px; padding-left: 0px; margin: 0px;" valign="top">
+                    <asp:Menu ID="mnuMain" runat="server" DynamicHorizontalOffset="2" Font-Names="Verdana"
+                        Font-Size="10pt" StaticDisplayLevels="3" StaticEnableDefaultPopOutImage="False"
+                        StaticSubMenuIndent="10px" Width="100%" Height="96px">
+                        <LevelMenuItemStyles>
+                            <asp:MenuItemStyle Font-Bold="True" Font-Names="Verdana" Font-Size="10pt"
+                                Font-Underline="False" BorderWidth="0px" ForeColor="Black" />
+                        </LevelMenuItemStyles>
+                        <StaticMenuItemStyle Font-Bold="False" Font-Names="Verdana" HorizontalPadding="6px" VerticalPadding="6px" />
+                        <DynamicHoverStyle BackColor="DarkGray" ForeColor="Black" />
+                        <DynamicMenuStyle BackColor="#FFFBD6" />
+                        <StaticSelectedStyle BackColor="DarkGray" Font-Bold="True" Font-Italic="True" Font-Names="Verdana"
+                            Font-Size="10pt" />
+                        <DynamicSelectedStyle BackColor="#FFCC66" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <Items>
+                            <asp:MenuItem Text="Account Information" Value="frmSubscriberAccount"></asp:MenuItem>
+                            <asp:MenuItem Text="Computer Status" Value="frmSubscriberStatus"></asp:MenuItem>
+                            <asp:MenuItem Text="Connection History" Value="frmSubscriberConnectionHistory"></asp:MenuItem>
+                            <asp:MenuItem Text="Storlen Report" Value="frmSubscriberStolenReport"></asp:MenuItem>
+                            <asp:MenuItem Text="Stolen Reports History" Value="frmSubscriberStolenReportsHistory"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="LightGray" Font-Bold="True" Font-Italic="True" Font-Names="Verdana"
+                            Font-Size="10pt" Font-Strikeout="False" />
+                    </asp:Menu>
+                                <br />
+                                <hr color="silver" size="1" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 850px; height: 525px; border-right-width: thin; border-right-color: gray; padding-right: 10px; padding-left: 10px; padding-bottom: 10px; padding-top: 10px;" valign="top">
+                    <asp:Panel ID="Panel" runat="server" Width="100%" HorizontalAlign="Center" ScrollBars="Auto" Height="100%" BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px">
+        <asp:contentplaceholder id="ContentPlaceHolder" runat="server">
+        </asp:contentplaceholder>
+                    </asp:Panel>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

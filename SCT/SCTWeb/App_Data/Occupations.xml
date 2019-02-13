@@ -1,0 +1,111 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Occupation" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Occupation">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="Code" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Occupation>
+    <Description></Description>
+    <Code></Code>
+  </Occupation>
+  <Occupation>
+    <Description>Accounting/Finance</Description>   
+    <Code>A/F</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Administration executive/senior</Description>
+    <Code>AE/S</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Administration IS/IT</Description>
+    <Code>AIS/AIT</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Administration of state/military</Description>
+    <Code>A/M</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Administration/general supervision</Description>
+    <Code>A/GS</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Attendance/customer support</Description>
+    <Code>A/CS</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Computing (Internet)</Description>
+    <Code>C(I)</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Computing (Other)</Description>
+    <Code>C(O)</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Consulting</Description>
+    <Code>C</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Education/training</Description>
+    <Code>E/T</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Engineering</Description>
+    <Code>E</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Human resources/personnel</Description>
+    <Code>HR/P</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Manufacturing/production/operations</Description>
+    <Code>M/P/O</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Professional (medical, legal, etc.).</Description>
+    <Code>P</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Research and development</Description>
+    <Code>RD</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Sales/marketing/advertising</Description>
+    <Code>S/M/A</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Merchant/craftsman</Description>
+    <Code>M/C</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Self/owner</Description>
+    <Code>S/O</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Unemployed/between jobs</Description>
+    <Code>U</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Retired</Description>
+    <Code>R</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Housewife</Description>
+    <Code>H</Code>
+  </Occupation>
+  <Occupation>
+    <Description>Student</Description>
+    <Code>S</Code>
+  </Occupation>
+</NewDataSet>

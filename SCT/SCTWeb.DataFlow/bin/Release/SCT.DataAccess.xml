@@ -1,0 +1,864 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SCT.DataAccess
+</name>
+</assembly>
+<members>
+<member name="T:SCT.DataAccess.DAClsappSubscribersDemographics.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appSubscribersDemographics
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.Fetch">
+	<summary>
+ Reads the data of all the Subscribers Demographics in the table appSubscribersDemographics and return
+ a list of DAClsSubscriberDemographic.Struct with each one of the read registries
+ </summary>
+	<returns>List of  DAClsSubscribersDemographic.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Subscriber Demographic in the table appSubscribersDemographics and return
+ a list of DAClsappSubscriberDemographic.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Subscriber Demographic to fetch</param>
+	<returns>List of  DAClsSubscribersDemographic.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.FetchSubscriberDemographics(System.Int64)">
+	<summary>
+ Read the data of the Subscriber demographic info in the table appSubscribersDemographics and
+ return a list of DAClsSubscriberDemographics.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDSubscriber">Subcriber ID of demographic info to fetch</param>
+	<returns>List of DAClsSubscribersDemographic.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appSubscribersDemographics and
+ return a list of DAClsSubscriberDemographic.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.Insert(SCT.DataAccess.DAClsappSubscribersDemographics.Struct)">
+	<summary>
+ Insert a new registry in the table appSubscribersDemographics and return Subscriber Demographic ID
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Demographic to insert</param>
+	<returns>Subscriber Demographic ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.Update(SCT.DataAccess.DAClsappSubscribersDemographics.Struct)">
+	<summary>
+ Update a registry in the table appSubscribersDemographics and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Demographic to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersDemographics.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appSubscribersDemographics and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Subscriber Demographic</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscribersDemographics">
+	<summary>
+ Represents a controller of data for the appSubscribersDemographics table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscribersAccounts.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserAccount 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.Fetch">
+	<summary>
+ Reads the data of all the Subscribers Accountst in the table appSubscribersAccounts and return
+ a list of DAClsSubscriberAccount.Struct with each one of the read registries
+ </summary>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Subscriber Account in the table appSubscribersAccounts and return
+ a list of DAClsSubscriberAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Subscriber Account to fetch</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.FetchWebSubscriber(System.String,System.String)">
+	<summary>
+ Read the data of a certain Advertiser Account in the table appAdvertiserAccount and return
+ a list of DAClsAdvertiserAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="pLogin"></param>
+	<param name="pWebPassword"></param>
+	<returns>List of DAClsAdvertiserAccount.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.FetchClientSubscriber(System.String,System.String)">
+	<summary>
+ Read the data of a certain Advertiser Account in the table appAdvertiserAccount and return
+ a list of DAClsAdvertiserAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="pComputerSerialNumber"></param>
+	<param name="pClientPassword"></param>
+	<returns>List of DAClsAdvertiserAccount.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appSubscribersAccounts and
+ return a list of DAClsSubscriberAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.Insert(SCT.DataAccess.DAClsappSubscribersAccounts.Struct)">
+	<summary>
+ Insert a new registry in the table appSubscribersAccounts and return Subscriber Account ID
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Account to insert</param>
+	<returns>Subscriber Account ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.Update(SCT.DataAccess.DAClsappSubscribersAccounts.Struct)">
+	<summary>
+ Update a registry in the table appSubscribersAccounts and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Account to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscribersAccounts.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appSubscribersAccounts and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Subscriber Account</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscribersAccounts">
+	<summary>
+ Represents a controller of data for the appSubscribersAccounts table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscriberStolenReports.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appSubscriberStolenReports
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.Fetch">
+	<summary>
+ Reads the data of all the Subscriber Stolen Reports in the table appSubscriberStolenReports
+ and return a list of DAClsSubscriberStolenReport.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsSubscriberStolenReport.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Subscriber Stolen Report in the table appSubscriberStolenReports
+ and return a list of DAClsSubscriberStolenReport.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Subscriber Stolen Report to fetch</param>
+	<returns>List of DAClsSubscriberStolenReport.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.FetchSubscriberStolenReports(System.Int64)">
+	<summary>
+ Read the data of the Subscriber Stolen Reports in the table appSubscriberStolenReports and
+ return a list of DAClsSubscriberStolenReport.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDSubscriber">Subscriber ID of Stolen Reports to fetch</param>
+	<returns>List of DAClsSubscriberStolenReport.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appSubscriberStolenReports and
+ return a list of DAClsSubscriberStolenReport.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.Insert(SCT.DataAccess.DAClsappSubscriberStolenReports.Struct)">
+	<summary>
+ Insert a new registry in the table appSubscriberStolenReports and return Subscriber Stolen Report ID
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Stolen Report to insert</param>
+	<returns>Subscriber Stolen Report ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.Update(SCT.DataAccess.DAClsappSubscriberStolenReports.Struct)">
+	<summary>
+ Update a registry in the table appSubscriberStolenReports and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Stolen Report to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberStolenReports.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appSubscriberStolenReports and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Subscriber Stolen Reports to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscriberStolenReports">
+	<summary>
+ Represents a controller of data for the DAClsappSubscriberStolenReports table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserAccount.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserAccount 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.Fetch">
+	<summary>
+ Reads the data of all the Advertiser Account in the table appAdvertiserAccount and return
+ a list of DAClsAdvertiserAccount.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserAccount.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser Account in the table appAdvertiserAccount and return
+ a list of DAClsAdvertiserAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser Account to fetch</param>
+	<returns>List of DAClsAdvertiserAccount.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.Fetch(System.String,System.String)">
+	<summary>
+ Read the data of a certain Advertiser Account in the table appAdvertiserAccount and return
+ a list of DAClsAdvertiserAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="pLogin"></param>
+	<param name="pPassword"></param>
+	<returns>List of DAClsAdvertiserAccount.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserAccount and
+ return a list of DAClsAdvertiserAccount.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.Insert(SCT.DataAccess.DAClsappAdvertiserAccount.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserAccount and return Advertiser Account ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Account to insert</param>
+	<returns>Advertiser Account ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.Update(SCT.DataAccess.DAClsappAdvertiserAccount.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserAccount and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Account to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAccount.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserAccount and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Advertiser Account</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserAccount">
+	<summary>
+ Represents a controller of data for the appAdvertiserAccount table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscriberConnectionHistory.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appSubscribersDemographics
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.Fetch">
+	<summary>
+ Reads the data of all the Subscriber Connection History in the table appSubscriberConnectionHistory
+ and return a list of DAClsSubscriberConnectionHistory.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsSubscriberConnectionHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Subscriber Connection History in the table appSubscriberConnectionHistory
+ and return a list of DAClsSubscriberConnectionHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Subscriber Connection History to fetch</param>
+	<returns>List of DAClsSubscriberConnectionHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.FetchSubscriberConnectionHistory(System.Int64)">
+	<summary>
+ Read the data of the Subscriber Connections History in the table appSubscriberConnectionHistory and
+ return a list of DAClsSubscriberConnectionHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDSubscriber">Subscriber ID of connection history to fetch</param>
+	<returns>List of DAClsSubscriberConnectionHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appSubscriberConnectionHistory and
+ return a list of DAClsSubscriberConnectionHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.Insert(SCT.DataAccess.DAClsappSubscriberConnectionHistory.Struct)">
+	<summary>
+ Insert a new registry in the table appSubscriberConnectionHistory and return Subscriber Connection History ID
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Connection History to insert</param>
+	<returns>Subscriber Connection History ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.Update(SCT.DataAccess.DAClsappSubscriberConnectionHistory.Struct)">
+	<summary>
+ Update a registry in the table appSubscriberConnectionHistory and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Subscriber Connection History to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappSubscriberConnectionHistory.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appSubscriberConnectionHistory and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Subscriber Connection History to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappSubscriberConnectionHistory">
+	<summary>
+ Represents a controller of data for the appSubscriberConnectionHistory table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserToDo.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserToDo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.Fetch">
+	<summary>
+ Reads the data of all the AdvertiserToDo in the table appAdvertiserToDo and return
+ a list of DAClsAdvertiserToDo.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserToDo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain AdvertiserToDo in the table appAdvertiserToDo and return
+ a list of DAClsAdvertiserToDo.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of AdvertiserToDo to fetch</param>
+	<returns>List of DAClsAdvertiserToDo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.FetchContactToDo(System.Int64)">
+	<summary>
+ Read the data of the Contact Advertiser ToDo in the table appAdvertiserToDo and
+ return a list of DAClsAdvertiserToDo.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDContact">Contact ID of Advertiser ToDo to fetch</param>
+	<returns>List of DAClsAdvertiserToDo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserToDo and
+ return a list of DAClsAdvertiserToDo.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.Insert(SCT.DataAccess.DAClsappAdvertiserToDo.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserToDo and return AdvertiserToDo ID
+ </summary>
+	<param name="pStruct">Struct with data of the AdvertiserToDo to insert</param>
+	<returns>AdvertiserToDo ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.Update(SCT.DataAccess.DAClsappAdvertiserToDo.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserToDo and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the AdvertiserToDo to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserToDo.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserToDo and return the number of rows affected
+ </summary>
+	<param name="pID">Id of the AdvertiserToDo to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserToDo">
+	<summary>
+ Represents a controller of data for the appAdvertiserToDo table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserProjectPriceInfo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Fetch">
+	<summary>
+ Reads the data of all the Advertiser Project Price Info in the table appAdvertiserProjectPriceInfo
+ and return a list of DAClsAdvertiserProjectPriceInfo.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserProjectPriceInfo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser Project Price Info in the table appAdvertiserProjectPriceInfo
+ and return a list of DAClsAdvertiserProjectPriceInfo.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser Project Price Info to fetch</param>
+	<returns>List of DAClsAdvertiserProjectPriceInfo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.FetchProjectPriceInfo(System.Int64)">
+	<summary>
+ Read the data of the project price info in the table appAdvertiserProjectPriceInfo and
+ return a list of DAClsAdvertiserProjectPriceInfo.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDProject">Project ID of price info to fetch</param>
+	<returns>List of DAClsAdvertiserProjectPriceInfo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserProjectPriceInfo and
+ return a list of DAClsAdvertiserProjectPriceInfo.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Insert(SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserProjectPriceInfo
+ and return Advertiser Project Price Info ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Project Price Info to insert</param>
+	<returns>Advertiser Project Price Info ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Update(SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserProjectPriceInfo and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Project Price Info to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserProjectPriceInfo and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Advertiser Project Price Info to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserProjectPriceInfo">
+	<summary>
+ Represents a controller of data for the appAdvertiserProjectPriceInfo table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserContactInfo.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserContactInfo 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.Fetch">
+	<summary>
+ Reads the data of all the Advertiser Contact Info in the table appAdvertiserContactInfo and return
+ a list of DAClsAdvertiserContactInfo.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserContactInfo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser Contact Info in the table appAdvertiserContactInfo and return
+ a list of DAClsAdvertiserContactInfo.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser Contact Info to fetch</param>
+	<returns>List of DAClsAdvertiserContactInfo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.FetchAdvertiserContactInfo(System.Int64)">
+	<summary>
+ Read the data of the Advertiser Contacts info in the table appAdvertiserContactInfo and
+ return a list of DAClsAdvertiserContactInfo.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDAdvertiser">Advertiser ID of Contact info to fetch</param>
+	<returns>List of DAClsAdvertiserContactInfo.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserContactInfo and
+ return a list of DAClsAdvertiserContactInfo.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.Insert(SCT.DataAccess.DAClsappAdvertiserContactInfo.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserContactInfo and return Advertiser Contact Info ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Contact Info to insert</param>
+	<returns>Advertiser Contact Info ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.Update(SCT.DataAccess.DAClsappAdvertiserContactInfo.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserContactInfo and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Contact Info to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserContactInfo.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserContactInfo and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Advertiser Contact Info to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserContactInfo">
+	<summary>
+ Represents a controller of data for the appAdvertiserContactInfo table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserDemographics.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserDemographics
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.Fetch">
+	<summary>
+ Reads the data of all the Advertiser Demographics in the table appAdvertiserDemographics and return
+ a list of DAClsAdvertiserDemographic.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserDemographic.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser Demographic in the table appAdvertiserDemographic and return
+ a list of DAClsAdvertiserDemographic.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser Demographic to fetch</param>
+	<returns>List of DAClsAdvertiserDemographic.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.FetchProjectDemographic(System.Int64)">
+	<summary>
+ Read the data of the Project Demographics info in the table appAdvertiserProjectDemographic and
+ return a list of DAClsAdvertiserProjectDemographic.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDProject">Advertiser Project ID of Project Demographic to fetch</param>
+	<returns>List of DAClsAdvertiserProjectDemographic.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserDemographics and
+ return a list of DAClsAdvertiserDemographic.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.Insert(SCT.DataAccess.DAClsappAdvertiserDemographics.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserDemographics and return Advertiser Demographic ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Demographic to insert</param>
+	<returns>Advertiser Demographic ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.Update(SCT.DataAccess.DAClsappAdvertiserDemographics.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserDemographics and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Demographic to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserDemographics.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserDemographics and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Advertiser Demographic to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserDemographics">
+	<summary>
+ Represents a controller of data for the appAdvertiserDemographics table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserProjects.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserProjects
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.Fetch">
+	<summary>
+ Reads the data of all the Advertiser Projects in the table appAdvertiserProjects and return
+ a list of DAClsAdvertiserProject.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserProject.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser Project in the table appAdvertiserProjects and return
+ a list of DAClsAdvertiserProject.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser Project to fetch</param>
+	<returns>List of DAClsAdvertiserProject.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.FetchAdvertiserProjects(System.Int64)">
+	<summary>
+ Read the data of the Advertiser projects in the table appAdvertiserProjects and
+ return a list of DAClsappAdvertiserProject.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDAdvertiser">Advertiser ID of project to fetch</param>
+	<returns>List of DAClsAdvertiserProject.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.FetchContactProjects(System.Int64)">
+	<summary>
+ Read the data of the contact projects in the table appAdvertiserProjects and
+ return a list of DAClsAdvertiserProject.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDContact">Contact ID of project to fetch</param>
+	<returns>List of DAClsAdvertiserProject.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserProjects and
+ return a list of DAClsAdvertiserProject.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.Insert(SCT.DataAccess.DAClsappAdvertiserProjects.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserProjects and return Advertiser Project ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Project to insert</param>
+	<returns>Advertiser Project ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.Update(SCT.DataAccess.DAClsappAdvertiserProjects.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserProjects and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Project to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserProjects.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserProjects and return the number of rows affected
+ </summary>
+	<param name="pID">Id of the Advertiser Project to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserProjects">
+	<summary>
+ Represents a controller of data for the appAdvertiserProjects table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserAdHistory.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserAdHistory
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.Fetch">
+	<summary>
+ Reads the data of all the Advertiser AdHistory in the table appAdvertiserAdHistory and
+ return a list of DAClsAdvertiserAdHistory.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserAdHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser AdHistory in the table appAdvertiserAdHistory and
+ return a list of DAClsAdvertiserAdHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser AdHistory to fetch</param>
+	<returns>List of DAClsAdvertiserAdHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.FetchProjectAdHistory(System.Int64)">
+	<summary>
+ Read the data of the Advertiser AdHistory in the table appAdvertiserAdHistory and
+ return a list of DAClsAdvertiserAdHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDProject">Project ID of AdHistory to fetch</param>
+	<returns>List of DAClsAdvertiserAdHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.FetchSubscriberAdHistory(System.Int64)">
+	<summary>
+ Read the data of the subscriber AdHistory in the table appAdvertiserAdHistory and
+ return a list of DAClsAdvertiserAdHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDSubscriber">Subscriber ID of AdHistory to fetch</param>
+	<returns>List of DAClsAdvertiserAdHistory.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserAdHistory and return
+ a list of DAClsAdvertiserAdHistory.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.Insert(SCT.DataAccess.DAClsappAdvertiserAdHistory.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserAdHistory and return Advertiser AdHistory ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser AdHistory to insert</param>
+	<returns>Advertiser AdHistory ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.Update(SCT.DataAccess.DAClsappAdvertiserAdHistory.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserAdHistory and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser AdHistory to Update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserAdHistory.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserAdHistory and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Advertiser AdHistory to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserAdHistory">
+	<summary>
+ Represents a controller of data for the appAdvertiserAdHistory table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserNotes.Struct">
+	<summary>
+ Represents one structures with the data of a registry of the table appAdvertiserNotes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.Fetch">
+	<summary>
+ Reads the data of all the Advertiser Notes in the table appAdvertiserNotes and return
+ a list of DAClsAdvertiserNotes.Struct with each one of the read registries
+ </summary>
+	<returns>List of DAClsAdvertiserNotes.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.Fetch(System.Int64)">
+	<summary>
+ Read the data of a certain Advertiser Notes in the table appAdvertiserNotes and return
+ a list of DAClsAdvertiserNotes.Struct with each one of the read registries 
+ </summary>
+	<param name="pID">ID of Advertiser Notes to fetch</param>
+	<returns>List of DAClsAdvertiserNotes.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.FetchContactNotes(System.Int64)">
+	<summary>
+ Read the data of the Contact Advertiser Notes in the table appAdvertiserNotes and
+ return a list of DAClsAdvertiserNote.Struct with each one of the read registries 
+ </summary>
+	<param name="pIDContact">Contact ID of Advertiser Notes to fetch</param>
+	<returns>List of DAClsAdvertiserNotes.Struct with the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.CreateSql(System.String[])">
+	<summary>
+ Creates the Sql Statement and returns it
+ </summary>
+	<param name="pParam"></param>
+	<returns>Sql Statement</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.DoFetch(System.String)">
+	<summary>
+ Execute SQL statement to reads the data of the table appAdvertiserNotes and
+ return a list of DAClsAdvertiserNotes.Struct with each one of the read registries 
+ </summary>
+	<param name="psql">Sql Statement to execute</param>
+	<returns>List of the read registries</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.Insert(SCT.DataAccess.DAClsappAdvertiserNotes.Struct)">
+	<summary>
+ Insert a new registry in the table appAdvertiserNotes and return Advertiser Notes ID
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Notes to insert</param>
+	<returns>Advertiser Notes ID</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.Update(SCT.DataAccess.DAClsappAdvertiserNotes.Struct)">
+	<summary>
+ Update a registry in the table appAdvertiserNotes and return the number of rows affected
+ </summary>
+	<param name="pStruct">Struct with data of the Advertiser Notes to update</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="M:SCT.DataAccess.DAClsappAdvertiserNotes.Delete(System.Int64)">
+	<summary>
+ Delete a registry in the table appAdvertiserNotes  and return the number of rows affected
+ </summary>
+	<param name="pID">ID of the Advertiser Notes to delete</param>
+	<returns>Number of rows affected</returns>
+	<remarks></remarks>
+</member><member name="T:SCT.DataAccess.DAClsappAdvertiserNotes">
+	<summary>
+ Represents a controller of data for the appAdvertiserNotes table in the data base ServerComputerTracking
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

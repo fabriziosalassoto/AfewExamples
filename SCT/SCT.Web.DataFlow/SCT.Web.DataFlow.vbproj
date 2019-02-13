@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5022BD1E-3808-4E16-887C-4FEB92D22D15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SCT.Web.DataFlow</RootNamespace>
+    <AssemblyName>SCT.Web.DataFlow</AssemblyName>
+    <MyType>Windows</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SCT.Web.DataFlow.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SCT.Web.DataFlow.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla, Version=2.0.3.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CSLA\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advertiser\DFClsAdAccountInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdChangeAccountInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdChangeNoteInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdChangeProjectInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdChangeToDoInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdChangeWebPassword.vb" />
+    <Compile Include="Advertiser\DFClsAdChangeContactInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdContactInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdContacts.vb" />
+    <Compile Include="Advertiser\DFClsAdMasterPage.vb" />
+    <Compile Include="Advertiser\DFClsAdNoteInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdNotes.vb" />
+    <Compile Include="Advertiser\DFClsAdProjectHistory.vb" />
+    <Compile Include="Advertiser\DFClsAdProjectInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdProjects.vb" />
+    <Compile Include="Advertiser\DFClsAdProjectStatistics.aspx.vb" />
+    <Compile Include="Advertiser\DFClsAdSignUp.vb" />
+    <Compile Include="Advertiser\DFClsAdToDoInformation.vb" />
+    <Compile Include="Advertiser\DFClsAdToDos.vb" />
+    <Compile Include="Subscriber\DFClsSubAccountInformation.vb" />
+    <Compile Include="Subscriber\DFClsSubChangeAccountInformation.vb" />
+    <Compile Include="Subscriber\DFClsSubChangeComputerPassword.vb" />
+    <Compile Include="Subscriber\DFClsSubChangeWebPassword.vb" />
+    <Compile Include="Subscriber\DFClsSubConnectionHistory.vb" />
+    <Compile Include="Subscriber\DFClsSubStatus.vb" />
+    <Compile Include="Subscriber\DFClsSubStolenReport.vb" />
+    <Compile Include="Subscriber\DFClsSubStolenReportsHistory.vb" />
+    <Compile Include="Subscriber\DFClsSubWelcome.vb" />
+    <Compile Include="Subscriber\DFClsSubMasterPage.vb" />
+    <Compile Include="Advertiser\DFClsAdSignIn.vb" />
+    <Compile Include="Subscriber\DFClsSubSignUp.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Subscriber\DFClsSubSignIn.vb" />
+    <Compile Include="Web References\SCTServer\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCT.Library\SCT.Library.vbproj">
+      <Project>{C07B3EBA-2DD1-4F2F-A0E3-23DF58B18853}</Project>
+      <Name>SCT.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Web References\SCTServer\SCTServer.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:1000/SCTServer/SCTServer.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SCTServer\</RelPath>
+      <UpdateFromURL>http://localhost:1000/SCTServer/SCTServer.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SCT_Web_DataFlow_SCTServer_SCTServer</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\SCTServer\ClsAdvertisingInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SCTServer\ClsConnectionResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SCTServer\ClsSubscriberAccountData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SCTServer\ClsSubscriberStolenReportData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\SCTServer\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\SCTServer\SCTServer.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

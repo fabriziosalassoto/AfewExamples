@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C07B3EBA-2DD1-4F2F-A0E3-23DF58B18853}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SCT.Library</RootNamespace>
+    <AssemblyName>SCT.Library</AssemblyName>
+    <MyType>Windows</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SCT.Library.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SCT.Library.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla, Version=2.0.3.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CSLA\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacle.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleForm.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormField.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormFieldList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleFormList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTable.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableField.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableFieldList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Administrator\ClsBinnacleTableList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacle.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleForm.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormFieldList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormField.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTable.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableFieldList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableField.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleTableInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleFormInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Advertiser\ClsBinnacleInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleFormEntryList.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleFormFieldEntry.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleFormEntry.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleFormEntryInfo.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleFormFieldEntryList.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleUserInfo.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleUserInfoList.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableField.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableFieldList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTable.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleTableList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormField.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormFieldList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleForm.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleFormList.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacle.Generated.vb" />
+    <Compile Include="Administrator\Binnacle\Subscriber\ClsBinnacleList.Generated.vb" />
+    <Compile Include="Advertiser\AdHistory\ClsAdHistoryInfo.vb" />
+    <Compile Include="Advertiser\AdHistory\ClsAdHistoryInfoList.vb" />
+    <Compile Include="Advertiser\Notes\ClsNoteInfo.vb" />
+    <Compile Include="Advertiser\Notes\ClsNoteInfoList.vb" />
+    <Compile Include="Advertiser\ToDos\ClsToDoInfo.vb" />
+    <Compile Include="Advertiser\ToDos\ClsToDoInfoList.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdAccountData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdContactData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdHistoryData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdInvoiceData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdInvoiceDetailData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdInvoiceDetailListData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdNoteData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdProjectDemographicData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdReceiptData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdReceiptProjectData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdReceiptProjectListData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdStateOfAccountData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdToDoData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdTransactionData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdTransactionInvoiceListData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdTransactionListData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdTransactionReceiptListData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleFormEntryData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleFormFieldEntryData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleUserData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\LogData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\ProfileFormData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\ProfileGroupData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\AdProjectData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\SubAccountData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\SubConnectionHistoryData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\SubDemographicData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\SubStolenReportData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdAccountNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdContactNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdInvoiceNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdNoteNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdProjectDemographicNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdProjectNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdReceiptNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\AdToDoNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\BinnacleFormEntryNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\BinnacleUserNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\FieldNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\FormProfileNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\GroupNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\GroupProfileNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\ProfileFormNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\ProfileGroupNewData.vb" />
+    <Compile Include="Security\ClsSCTAdvertiserIdentity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\ClsSCTAdvertiserPrincipal.vb" />
+    <Compile Include="Security\ClsSCTClientIdentity.vb" />
+    <Compile Include="Security\ClsSCTClientPrincipal.vb" />
+    <Compile Include="Security\ClsSCTIdentity.vb" />
+    <Compile Include="Security\ClsSCTPrincipal.vb" />
+    <Compile Include="Security\ClsSCTSubcriberIdentity.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security\ClsSCTSubscriberPrincipal.vb" />
+    <Compile Include="Security\ClsSCTUserIdentity.vb" />
+    <Compile Include="Security\ClsSCTUserPrincipal.vb" />
+    <Compile Include="Administrator\Field\ClsField.Generated.vb" />
+    <Compile Include="Administrator\Field\ClsFieldInfo.Generated.vb" />
+    <Compile Include="Administrator\Field\ClsFieldInfoList.Generated.vb" />
+    <Compile Include="Administrator\Field\ClsFieldList.Generated.vb" />
+    <Compile Include="Administrator\Form\ClsForm.Generated.vb" />
+    <Compile Include="Administrator\Form\ClsFormInfo.Generated.vb" />
+    <Compile Include="Administrator\Form\ClsFormInfoList.Generated.vb" />
+    <Compile Include="Administrator\Form\ClsFormList.Generated.vb" />
+    <Compile Include="Administrator\Form\ClsFormProfile.vb" />
+    <Compile Include="Administrator\Form\ClsFormProfileInfo.vb" />
+    <Compile Include="Administrator\Form\ClsFormProfileInfoList.vb" />
+    <Compile Include="Administrator\Form\ClsFormProfileList.vb" />
+    <Compile Include="Administrator\Group\ClsGroup.Generated.vb" />
+    <Compile Include="Administrator\Group\ClsGroupInfo.Generated.vb" />
+    <Compile Include="Administrator\Group\ClsGroupInfoList.Generated.vb" />
+    <Compile Include="Administrator\Group\ClsGroupList.Generated.vb" />
+    <Compile Include="Administrator\Group\ClsGroupProfile.vb" />
+    <Compile Include="Administrator\Group\ClsGroupProfileInfo.vb" />
+    <Compile Include="Administrator\Group\ClsGroupProfileInfoList.vb" />
+    <Compile Include="Administrator\Group\ClsGroupProfileList.vb" />
+    <Compile Include="Administrator\Operation\ClsOperation.Generated.vb" />
+    <Compile Include="Administrator\Operation\ClsOperationInfo.Generated.vb" />
+    <Compile Include="Administrator\Operation\ClsOperationInfoList.Generated.vb" />
+    <Compile Include="Administrator\Operation\ClsOperationList.Generated.vb" />
+    <Compile Include="Administrator\Profile\ClsProfile.Generated.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileForm.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileFormInfo.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileFormInfoList.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileFormList.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileGroup.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileGroupInfo.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileGroupInfoList.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileGroupList.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileInfo.Generated.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileInfoList.Generated.vb" />
+    <Compile Include="Administrator\Profile\ClsProfileList.Generated.vb" />
+    <Compile Include="Administrator\User\ClsUser.Generated.vb" />
+    <Compile Include="Administrator\User\ClsUserInfo.Generated.vb" />
+    <Compile Include="Administrator\User\ClsUserInfoList.Generated.vb" />
+    <Compile Include="Administrator\User\ClsUserList.Generated.vb" />
+    <Compile Include="SessionAdmin\AdminSite\ClsSessionAdmin.vb" />
+    <Compile Include="Advertiser\Project\AdHistory\ClsAdHistory.vb" />
+    <Compile Include="Advertiser\Project\AdHistory\ClsAdHistoryList.vb" />
+    <Compile Include="Advertiser\ClsAccount.vb" />
+    <Compile Include="Advertiser\ClsAccountInfo.vb" />
+    <Compile Include="Advertiser\ClsAccountInfoList.vb" />
+    <Compile Include="Advertiser\ClsAccountList.vb" />
+    <Compile Include="Advertiser\Contact\ClsContact.vb" />
+    <Compile Include="Advertiser\Contact\ClsContactInfo.vb" />
+    <Compile Include="Advertiser\Contact\ClsContactInfoList.vb" />
+    <Compile Include="Advertiser\Contact\ClsContactList.vb" />
+    <Compile Include="Advertiser\Contact\Note\ClsNoteList.vb" />
+    <Compile Include="Advertiser\Contact\ToDo\ClsToDoList.vb" />
+    <Compile Include="Advertiser\Project\AdHistory\ClsAdHistoryInfo.Generated.vb" />
+    <Compile Include="Advertiser\Project\AdHistory\ClsAdHistoryInfoList.Generated.vb" />
+    <Compile Include="Advertiser\Project\ClsProjectInfo.vb" />
+    <Compile Include="Advertiser\Project\ClsProjectInfoList.vb" />
+    <Compile Include="Advertiser\Project\ClsProjectList.vb" />
+    <Compile Include="Advertiser\Project\Demographic\ClsDemographicInfoList.Generated.vb" />
+    <Compile Include="Advertiser\Project\Demographic\ClsDemographicInfo.Generated.vb" />
+    <Compile Include="Advertiser\Project\Demographic\ClsDemographic.vb" />
+    <Compile Include="Advertiser\Contact\Note\ClsNote.vb" />
+    <Compile Include="Advertiser\Project\Demographic\ClsDemographicList.vb" />
+    <Compile Include="Advertiser\Project\Invoice\ClsInvoiceList.Generated.vb" />
+    <Compile Include="Advertiser\Project\Invoice\ClsInvoice.Generated.vb" />
+    <Compile Include="Advertiser\Project\Invoice\ClsInvoiceInfoList.Generated.vb" />
+    <Compile Include="Advertiser\Project\Invoice\ClsInvoiceInfo.Generated.vb" />
+    <Compile Include="Advertiser\Project\Invoice\Detail\ClsDetailList.Generated.vb" />
+    <Compile Include="Advertiser\Project\Invoice\Detail\ClsDetail.Generated.vb" />
+    <Compile Include="Advertiser\Project\Price\ClsPriceInfoList.Generated.vb" />
+    <Compile Include="Advertiser\Project\Price\ClsPriceInfo.Generated.vb" />
+    <Compile Include="Advertiser\Project\Price\ClsPrice.vb" />
+    <Compile Include="Advertiser\Contact\ToDo\ClsToDo.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleFormData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleFormFieldData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleTableData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\BinnacleTableFieldData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\FieldData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\FormData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\FormProfileData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\GroupData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\GroupProfileData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\OperationData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\ProfileData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\Datas\UserData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\BinnacleFormNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\BinnacleNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\FieldData\NewFieldData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\FormNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\OperationNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\ProfileNewData.vb" />
+    <Compile Include="SessionAdmin\DataStruct\NewDatas\UserNewData.vb" />
+    <Compile Include="Administrator\Binnacle\ClsBinnacleFormEntryInfoList.vb" />
+    <Compile Include="Advertiser\Project\Receipt\ClsReceipt.vb" />
+    <Compile Include="Advertiser\Project\Receipt\ClsReceiptInfo.vb" />
+    <Compile Include="Advertiser\Project\Receipt\ClsReceiptInfoList.vb" />
+    <Compile Include="Advertiser\Project\Receipt\ClsReceiptList.vb" />
+    <Compile Include="Advertiser\Receipt\ClsReceiptList.Generated.vb" />
+    <Compile Include="Advertiser\Receipt\ClsReceipt.Generated.vb" />
+    <Compile Include="Advertiser\Receipt\ClsReceiptInfoList.Generated.vb" />
+    <Compile Include="Advertiser\Receipt\ClsReceiptInfo.Generated.vb" />
+    <Compile Include="Advertiser\Receipt\Project\ClsProject.vb" />
+    <Compile Include="Advertiser\Receipt\Project\ClsProjectInfo.vb" />
+    <Compile Include="Advertiser\Receipt\Project\ClsProjectInfoList.vb" />
+    <Compile Include="Advertiser\Receipt\Project\ClsProjectList.vb" />
+    <Compile Include="SearchCriteria\SearchCriteria.vb" />
+    <Compile Include="SessionAdmin\WebSite\ClsSessionAdmin.vb" />
+    <Compile Include="Advertiser\Transaction\ClsTransactionInvoiceInfo.vb" />
+    <Compile Include="Advertiser\Transaction\ClsTransactionInvoiceInfoList.vb" />
+    <Compile Include="Advertiser\Transaction\ClsTransactionReceiptInfo.vb" />
+    <Compile Include="Advertiser\Transaction\ClsTransactionReceiptInfoList.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Advertiser\Project\Price\ClsPriceList.vb" />
+    <Compile Include="Advertiser\Project\ClsProject.vb" />
+    <Compile Include="Subscriber\ClsAccount.vb" />
+    <Compile Include="Subscriber\ClsAccountInfo.vb" />
+    <Compile Include="Subscriber\ClsAccountInfoList.vb" />
+    <Compile Include="Subscriber\ClsAccountList.vb" />
+    <Compile Include="Subscriber\ConnectionHistory\ClsConnectionHistory.vb" />
+    <Compile Include="Subscriber\ConnectionHistory\ClsConnectionHistoryList.vb" />
+    <Compile Include="Subscriber\Demographic\ClsDemographic.vb" />
+    <Compile Include="Subscriber\Demographic\ClsDemographicList.vb" />
+    <Compile Include="Subscriber\StolenReport\ClsStolenReport.vb" />
+    <Compile Include="Subscriber\StolenReport\ClsStolenReportList.vb" />
+    <Compile Include="SearchCriteria\SearchCriteriaList.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SCT.DataAccess\SCT.DataAccess.vbproj">
+      <Project>{B6EA8F3D-80EF-4EBE-89F5-5F27E224B38C}</Project>
+      <Name>SCT.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

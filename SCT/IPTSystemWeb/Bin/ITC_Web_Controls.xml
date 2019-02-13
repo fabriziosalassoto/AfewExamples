@@ -1,0 +1,160 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ITC_Web_Controls
+</name>
+</assembly>
+<members>
+<member name="P:ITC_Web_Controls.TableDataRow.Nbr">
+	<summary>
+ Get or set the number of identification of the row
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ITC_Web_Controls.TableDataRow.DataCellClicked">
+	<summary>
+ Get or set the number of datacell clicked
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataRow.#ctor(System.Int32,System.Int32,System.String)">
+	<summary>
+ Create a new TableDataRow instance
+ </summary>
+	<param name="piRowNbr">Number of the row</param>
+	<param name="piRowID">ID of the row</param>
+	<param name="psCssClass">Css class name</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataRow.AddCellsData(System.Int32,System.String,ITC_Web_Controls.DataCellType,System.Web.UI.WebControls.HorizontalAlign,System.Int32)">
+	<summary>
+ Create a new TableDataCell to add to the row
+ </summary>
+	<param name="piNbr">Number of the cell</param>
+	<param name="psString">Text for text and Link type or image URL for image or imagebutton type</param>
+	<param name="peType">Cell type</param>
+	<param name="peHAlign">Horizontal Aling of text in the text</param>
+	<param name="piWidth">Width of the cell</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataRow.cmdCell_Click(System.Object,System.EventArgs)">
+	<summary>
+ Relates the event DataCellClick of the cell to the DataRowClick event of the row
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableFooterRow.#ctor(System.String)">
+	<summary>
+ Create a new TableFooterRow instance
+ </summary>
+	<param name="psCssClass">Css class name</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableFooterRow.AddColumnFooter(System.String,System.Web.UI.WebControls.HorizontalAlign,System.Int32)">
+	<summary>
+ Create a new TableFooterCell to add to the row
+ </summary>
+	<param name="psText">Text to show</param>
+	<param name="peHAlign">Text align</param>
+	<param name="piColumnSpan">Column Span</param>
+	<remarks></remarks>
+</member><member name="P:ITC_Web_Controls.TableHeaderCell.Nbr">
+	<summary>
+ Get or set the number of identification of the cell 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderCell.#ctor">
+	<summary>
+ Create a new TableHeaderCell instance
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderCell.AddButton">
+	<summary>
+ Create a new button to add to the cell 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderCell.AddSortImage(System.String)">
+	<summary>
+ Create a new SortImage to add to the cell 
+ </summary>
+	<param name="psSortImageUrl">URL of the image to show</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderCell.cmdButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Relates the event click of the button to the HeaderCellClick event of the cell 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ITC_Web_Controls.TableHeaderRow.SortCellClicked">
+	<summary>
+ Get or set the number of sortcell clicked
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ITC_Web_Controls.TableHeaderRow.SortDirection">
+	<summary>
+ Get or set sort direction
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderRow.#ctor(System.Web.UI.WebControls.SortDirection,System.Int32,System.String)">
+	<summary>
+ Create a new TableHeader instance
+ </summary>
+	<param name="peSortDirection">Sort direction</param>
+	<param name="piSortCellClicked">Number of the sort cell clicked</param>
+	<param name="psCssClass">Css class name</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderRow.AddColumnHeader(System.Int32,System.String,ITC_Web_Controls.SortCellType,System.String,System.String)">
+	<summary>
+ Create a new TableHeaderCell to add to the row
+ </summary>
+	<param name="piNbr">Number of the row</param>
+	<param name="psText">Text to show</param>
+	<param name="peType">Sort cell type</param>
+	<param name="psUrlImgAsc">URL of the image for indicate ascending direction</param>
+	<param name="psUrlImgDes">URL of the image for indicate descendent direction</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableHeaderRow.cmdCell_Click(System.Object,System.EventArgs)">
+	<summary>
+ Relates the event HeaderCellClick of the cell to the HeaderRowClick event of the row
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ITC_Web_Controls.TableDataCell.Nbr">
+	<summary>
+ Get or set the number of identification of the cell 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ITC_Web_Controls.TableDataCell.RowNbr">
+	<summary>
+ Get or set the number of the correspondent row 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataCell.#ctor">
+	<summary>
+ Create a new TableHeaderCell instance
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataCell.AddLinkButton(System.String)">
+	<summary>
+ Create a new link button and it adds it to the cell 
+ </summary>
+	<param name="psText">Text to show</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataCell.AddImagenButton(System.String)">
+	<summary>
+ Create a new imagebutton and it adds it to the cell 
+ </summary>
+	<param name="psImageUrl">URL of the image to show</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataCell.AddImagen(System.String)">
+	<summary>
+ Create a new image and it adds it to the cell 
+ </summary>
+	<param name="psImageUrl">URL of the image to show</param>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataCell.cmdButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ Relates the event click of the button to the DataCellClick event of the cell 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ITC_Web_Controls.TableDataCell.cmdImagenButton_Click(System.Object,System.Web.UI.ImageClickEventArgs)">
+	<summary>
+  Relates the event click of the imagebutton to the DataCellClick event of the cell 
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

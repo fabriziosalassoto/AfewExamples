@@ -1,0 +1,180 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="Forms_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>IP Tracking Admin System</title>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" onload="MM_preloadImages('../images/top_image2.gif')">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" style="padding-right: 0px; padding-left: 0px;
+            padding-bottom: 0px; margin: 0px; padding-top: 0px; height: 650px; width: 1000px;">
+            <tr>
+                <td colspan="2" style="height: 50px; padding-right: 0px; padding-left: 0px; font-weight: bold; font-size: 20pt; padding-bottom: 0px; margin: 0px; color: white; padding-top: 0px; font-style: italic; font-family: 'Comic Sans MS'; width: 1000px; text-align: center;" bgcolor="#000000"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','../images/top_image2.gif',1)"><img src="../Images/top_image1.gif" name="Image5" height="125" border="0" id="Image" style="width: 100%" width="0" /></a></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="height: 30px; border-top-width: thin; border-left-width: thin; border-left-color: #999999; border-bottom-width: thin; border-bottom-color: #999999; border-top-color: #999999; border-right-width: thin; border-right-color: #999999; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; margin: 0px; padding-top: 0px; width: 1000px;" bgcolor="darkgray">
+                    <table style="width: 100%; height: 100%">
+                        <tr>
+                            <td style="width: 925px;" valign="middle" align="right">
+                                &nbsp; &nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblUserName" runat="server" Font-Bold="True" Font-Names="Verdana"
+                        Font-Size="10pt" ForeColor="WhiteSmoke" Width="400px" Font-Italic="False"></asp:Label></td>
+                            <td align="center" valign="middle" style="width: 75px">
+                                <asp:Menu ID="mnuUser" runat="server" DynamicHorizontalOffset="2"
+                                    Font-Names="Verdana" Font-Size="10pt" ForeColor="Gray" StaticDisplayLevels="3"
+                                    StaticSubMenuIndent="10px" Orientation="Horizontal" StaticTopSeparatorImageUrl="~/Images/Tab.gif" Width="50px">
+                                    <LevelMenuItemStyles>
+                                        <asp:MenuItemStyle Font-Bold="True" Font-Names="Verdana" Font-Size="10pt"
+                                            Font-Underline="False" ForeColor="WhiteSmoke" />
+                                    </LevelMenuItemStyles>
+                                    <StaticMenuItemStyle Font-Bold="False" Font-Names="Arial" ForeColor="#990000"
+                                        HorizontalPadding="5px" />
+                                    <DynamicHoverStyle BackColor="DarkGray" ForeColor="Black" />
+                                    <DynamicMenuStyle BackColor="#FFFBD6" />
+                                    <StaticSelectedStyle Font-Bold="True" Font-Italic="False" Font-Names="Arial"
+                                        Font-Size="10pt" Font-Underline="False" BorderStyle="Groove" ForeColor="WhiteSmoke" />
+                                    <DynamicSelectedStyle BackColor="#FFCC66" />
+                                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                                    <Items>
+                                        <asp:MenuItem Text="Change Password" Value="frmChangePassword"></asp:MenuItem>
+                                        <asp:MenuItem Text="Sign Out" Value="SignOut"></asp:MenuItem>
+                                    </Items>
+                                    <StaticHoverStyle Font-Bold="True" Font-Italic="True"
+                                        Font-Names="Arial" Font-Size="10pt" ForeColor="#990000" Font-Underline="True" />
+                                </asp:Menu>
+                            </td>
+                        </tr>
+                    </table>
+                   </td>
+            </tr>
+            <tr>
+                <td style="width: 130px; height: 570px; padding-right: 5px; padding-left: 5px; padding-top: 5px; border-top-width: thin; border-left-width: thin; border-left-color: gray; border-bottom-width: thin; border-bottom-color: gray; border-top-color: gray; padding-bottom: 5px; border-right-width: thin; border-right-color: gray;" align="center" valign="top" bgcolor="white">
+                    <asp:Panel ID="pnlMenu" runat="server" Height="100%" ScrollBars="Auto" HorizontalAlign="Left" BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" Width="100%">
+                    <asp:Menu ID="mnuMain" runat="server" Font-Names="Verdana"
+                        Font-Size="10pt"
+                        StaticSubMenuIndent="10px" DisappearAfter="1000" Width="100%">
+                        <LevelMenuItemStyles>
+                            <asp:MenuItemStyle Font-Bold="True" Font-Names="Verdana" Font-Size="10pt"
+                                Font-Underline="False" ForeColor="Black" />
+                            <asp:MenuItemStyle Font-Bold="False" Font-Names="Verdana" Font-Underline="False" ForeColor="Black" Font-Size="10pt" />
+                            <asp:MenuItemStyle Font-Bold="False" Font-Names="Verdana" Font-Size="9pt" Font-Underline="False"
+                                ForeColor="Black" />
+                        </LevelMenuItemStyles>
+                        <StaticMenuItemStyle Font-Bold="False" Font-Names="Verdana" HorizontalPadding="6px" VerticalPadding="4px" />
+                        <DynamicHoverStyle BackColor="LightGray" ForeColor="Black" Font-Bold="True" Font-Italic="True" Font-Names="Verdana" Font-Size="10pt" />
+                        <DynamicMenuStyle BackColor="WhiteSmoke" BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px" />
+                        <StaticSelectedStyle BackColor="DarkGray" Font-Bold="True" Font-Italic="True" Font-Names="Verdana"
+                            Font-Size="10pt" />
+                        <DynamicSelectedStyle BackColor="DarkGray" Font-Bold="True" Font-Italic="True" Font-Names="Verdana" Font-Size="10pt" />
+                        <DynamicMenuItemStyle HorizontalPadding="10px" VerticalPadding="4px" Font-Names="Verdana" />
+                        <Items>
+                            <asp:MenuItem Text=" Main Page" Value="frmMain"></asp:MenuItem>
+                            <asp:MenuItem Text=" Advertisers" Value="frmAdvertisers">
+                                <asp:MenuItem Text=" Accounts" Value="frmAdvertiserAccounts"></asp:MenuItem>
+                                <asp:MenuItem Text=" Contacts" Value="frmAdvertiserContacts">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text=" Projects" Value="frmAdvertiserProjects">
+                                </asp:MenuItem>
+                                    <asp:MenuItem Text=" Notes" Value="frmAdvertiserNotes"></asp:MenuItem>
+                                    <asp:MenuItem Text=" To Do" Value="frmAdvertiserToDos"></asp:MenuItem>
+                                    <asp:MenuItem Text=" History" Value="frmAdvertiserProjectHistory"></asp:MenuItem>
+                                    <asp:MenuItem Text=" Statistics" Value="frmAdvertiserProjectStatistics"></asp:MenuItem>
+                                <asp:MenuItem Text=" Transactions " Value="frmAdvertiserTransactions"></asp:MenuItem>
+                                <asp:MenuItem Text=" State of Account" Value="frmAdvertiserStateOfAccount"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text=" Subscribers" Value="frmSubscribers">
+                                <asp:MenuItem Text=" Accounts" Value="frmSubscriberAccounts"></asp:MenuItem>
+                                <asp:MenuItem Text=" Connections" Value="frmSubscriberConnections"></asp:MenuItem>
+                                <asp:MenuItem Text=" Connections History" Value="frmSubscriberConnectionsHistory"></asp:MenuItem>
+                                <asp:MenuItem Text=" Stolen Reports" Value="frmSubscriberStolenReports"></asp:MenuItem>
+                                <asp:MenuItem Text=" Stolen Reports History" Value="frmSubscriberStolenReportsHistory"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text=" Security" Value="frmSecurity">
+                                <asp:MenuItem Text=" Profiles" Value="frmProfiles"></asp:MenuItem>
+                                <asp:MenuItem Text=" Users" Value="frmUsers"></asp:MenuItem>
+                                <asp:MenuItem Text=" Forms" Value="frmForms"></asp:MenuItem>
+                                <asp:MenuItem Text=" Groups" Value="frmGroups"></asp:MenuItem>
+                                <asp:MenuItem Text=" Fields" Value="frmFields"></asp:MenuItem>
+                                <asp:MenuItem Text=" Operations" Value="frmOperations"></asp:MenuItem>
+                                <asp:MenuItem Text=" Log Entries" Value="frmBinnacleFormEntries">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="LightGray" Font-Bold="True" Font-Italic="True" Font-Names="Verdana"
+                            Font-Size="10pt" Font-Strikeout="False" />
+                    </asp:Menu>
+                        <hr color="silver" size="1" />
+                    </asp:Panel>
+                </td>
+                <td style="width: 870px; height: 570px; border-right-width: thin; border-right-color: gray; padding-right: 5px; padding-left: 5px; padding-bottom: 5px; padding-top: 5px;" valign="top" bgcolor="white">
+                    <asp:Panel ID="pnlMain" runat="server" Width="100%" HorizontalAlign="Center" ScrollBars="Auto" Height="100%" BorderColor="Silver" BorderStyle="Solid" BorderWidth="1px">
+        <asp:contentplaceholder id="ContentPlaceHolder" runat="server">
+        </asp:contentplaceholder>
+                    </asp:Panel>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

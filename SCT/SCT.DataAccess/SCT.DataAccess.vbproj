@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6EA8F3D-80EF-4EBE-89F5-5F27E224B38C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SCT.DataAccess</RootNamespace>
+    <AssemblyName>SCT.DataAccess</AssemblyName>
+    <MyType>Windows</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SCT.DataAccess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SCT.DataAccess.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla, Version=2.0.3.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CSLA\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAClsappAdvertiserContactNotes.vb" />
+    <Compile Include="DAClsappAdvertiserContactToDo.vb" />
+    <Compile Include="DAClsappAdvertiserProjectHistory.vb" />
+    <Compile Include="DAClsappAdvertiserProjectInvoiceDetails.Generated.vb" />
+    <Compile Include="DAClsappAdvertiserProjectInvoices.Generated.vb" />
+    <Compile Include="DAClsappAdvertiserProjectReceipts.Generated.vb" />
+    <Compile Include="DAClsappAdvertiserReceipts.Generated.vb" />
+    <Compile Include="DAClsappAdvertiserTransactionInvoices.vb" />
+    <Compile Include="DAClsappAdvertiserTransactionReceipts.vb" />
+    <Compile Include="DAClsprgBinnacleFormFieldEntry.vb" />
+    <Compile Include="DAClsprgBinnacleFormFields.vb" />
+    <Compile Include="DAClsprgBinnacleForms.vb" />
+    <Compile Include="DAClsprgAdvertiserBinnacle.Generated.vb" />
+    <Compile Include="DAClsprgAdvertiserBinnacleFormFields.Generated.vb" />
+    <Compile Include="DAClsprgAdvertiserBinnacleForms.Generated.vb" />
+    <Compile Include="DAClsprgAdvertiserBinnacleTableFields.Generated.vb" />
+    <Compile Include="DAClsprgAdvertiserBinnacleTables.Generated.vb" />
+    <Compile Include="DAClsprgBinnacleFormEntry.vb" />
+    <Compile Include="DAClsprgBinnacle.vb" />
+    <Compile Include="DAClsprgBinnacleTableFields.vb" />
+    <Compile Include="DAClsprgBinnacleTables.vb" />
+    <Compile Include="DAClsprgBinnacleUsers.vb" />
+    <Compile Include="DAClsprgSubscriberBinnacle.Generated.vb" />
+    <Compile Include="DAClsprgSubscriberBinnacleFormFields.Generated.vb" />
+    <Compile Include="DAClsprgSubscriberBinnacleForms.Generated.vb" />
+    <Compile Include="DAClsprgSubscriberBinnacleTableFields.Generated.vb" />
+    <Compile Include="DAClsprgSubscriberBinnacleTables.Generated.vb" />
+    <Compile Include="Enums\Enums.vb" />
+    <Compile Include="Parameter\Parameter.vb" />
+    <Compile Include="Parameter\ParameterList.vb" />
+    <Compile Include="StructField\StructField.vb" />
+    <Compile Include="DAClsappAdvertiserAccount.vb" />
+    <Compile Include="DAClsappAdvertiserAdHistory.vb" />
+    <Compile Include="DAClsappAdvertiserContactInfo.vb" />
+    <Compile Include="DAClsappAdvertiserDemographics.vb" />
+    <Compile Include="DAClsappAdvertiserNotes.vb" />
+    <Compile Include="DAClsappAdvertiserProjectPriceInfo.vb" />
+    <Compile Include="DAClsappAdvertiserProjects.vb" />
+    <Compile Include="DAClsappAdvertiserToDo.vb" />
+    <Compile Include="DAClsappSubscriberConnectionHistory.vb" />
+    <Compile Include="DAClsappSubscribersAccounts.vb" />
+    <Compile Include="DAClsappSubscribersDemographics.vb" />
+    <Compile Include="DAClsappSubscriberStolenReports.vb" />
+    <Compile Include="DAClsprgAdministrativeBinnacle.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeBinnacleFormFields.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeBinnacleForms.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeBinnacleTableFields.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeBinnacleTables.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeFormPermissions.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeGroupPermissions.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeProfiles.Generated.vb" />
+    <Compile Include="DAClsprgAdministrativeUsers.Generated.vb" />
+    <Compile Include="DAClsprgFields.Generated.vb" />
+    <Compile Include="DAClsprgForms.Generated.vb" />
+    <Compile Include="DAClsprgGroups.Generated.vb" />
+    <Compile Include="DAClsprgOperations.Generated.vb" />
+    <Compile Include="ConnectionString\DADataBase.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBConnection\DBConnection.vbproj">
+      <Project>{3C5901E7-9230-4824-B811-A50E3EFFBD3D}</Project>
+      <Name>DBConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
